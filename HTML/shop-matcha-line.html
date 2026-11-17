@@ -152,10 +152,12 @@ main{display:block}
 .pn{--g:var(--gutter); position:relative; display:block; flex:56 1 0; min-width:0; overflow:hidden; color:var(--paper); container-type:inline-size; container-name:pn; transition:flex-grow .9s cubic-bezier(.2,.8,.2,1)}
 .pn.m{background:var(--matcha)}
 .pn.t{background:var(--red); flex-grow:44; border-inline-start:1.5px solid var(--ink)}
+@media (min-width:641px){
 .v:has(.pn.m:hover) .pn.m,.v[data-act=m] .pn.m{flex-grow:80}
 .v:has(.pn.m:hover) .pn.t,.v[data-act=m] .pn.t{flex-grow:20}
 .v:has(.pn.t:hover) .pn.m,.v[data-act=t] .pn.m{flex-grow:20}
 .v:has(.pn.t:hover) .pn.t,.v[data-act=t] .pn.t{flex-grow:80}
+}
 .pn .tx{position:absolute; top:calc(var(--navb) + 26px); inset-inline-start:var(--g); width:34vw; transition:opacity .35s}
 .pn .tx p{margin:0}
 .pn .tx .sn{font-size:clamp(14px,1.25vw,18px); line-height:1.4; max-width:30ch}
@@ -206,6 +208,8 @@ main{display:block}
 .rv{animation:rise .8s cubic-bezier(.2,.8,.2,1) both; animation-delay:calc(var(--i,0) * .08s)}
 @keyframes rise{from{opacity:0; transform:translateY(22px)}to{opacity:1; transform:none}}
 @media (max-width:900px){ .v{flex-direction:column} .pn{flex:1 1 0 !important} .pn.t{border-inline-start:0; border-top:1.5px solid var(--ink)} }
+/* mobile: the NM chip would sit under the big kanji in the stacked panels, so it is hidden */
+@media (max-width:640px){ .o3 .chip{display:none} }
 @media (prefers-reduced-motion:reduce){ .pn{transition:none} .oD .tape div{animation:none} .rv{animation:none} }
 
 /* the only cue left: scroll down */
@@ -218,8 +222,10 @@ main{display:block}
 
 /* ---------- scrolling opens a grid in the chosen side; the other side stays squeezed ---------- */
 .v{overflow:hidden}
+@media (min-width:641px){
 .v[data-open=m] .pn.m,.v[data-open=t] .pn.t{flex-grow:80 !important}
 .v[data-open=m] .pn.t,.v[data-open=t] .pn.m{flex-grow:20 !important; cursor:pointer}
+}
 /* each side is one scroller: the opening screen scrolls up and the products follow, no switch of page */
 .sv{position:absolute; inset:0; overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; overflow-anchor:none; scrollbar-width:thin; scrollbar-color:rgba(26,44,39,.45) transparent}
 .hs{position:relative; height:100%; min-height:560px; background:var(--c)}
@@ -608,6 +614,78 @@ main{display:block}
 /* taste level: five small cells, filled up to the level. A reading, not a slider */
 :is(.meter,.cmp3 .meter,.ct .mt) i{flex:1; height:100%; border:1px solid currentColor; border-radius:1px; opacity:.32}
 :is(.meter,.cmp3 .meter,.ct .mt) i.on{background:currentColor; opacity:1}
+
+/* ---------- phones: the split opening (green / red), the compare peek and the compare popup ---------- */
+.mh{display:none}
+.ct-cards,.cpk{display:none}
+@media (max-width:640px){
+  /* opening: two halves. Tap one and it grows and scrolls; the other stays as a small strip at the bottom */
+  .pn{min-height:0; transition:flex-basis .55s cubic-bezier(.2,.8,.2,1)}
+  .pn.m{order:1} .pn.t{order:2}
+  .v[data-open=t] .pn.t{order:1} .v[data-open=t] .pn.m{order:2}
+  .v[data-open] .pn.sq{flex:0 0 calc(64px + env(safe-area-inset-bottom)) !important; cursor:pointer; border-top:1.5px solid var(--ink)}
+  .pn.sq .sv{visibility:hidden}
+  /* the opening split keeps the desktop look: each half plays its video under the colour wash, only the name sits on top */
+  .v:not([data-open]) .sv{overflow:hidden; pointer-events:none}
+  .v:not([data-open]) .hs{height:100%}
+  .v:not([data-open]) .hs>:not(.hv):not(.hg),.v:not([data-open]) .gin{display:none}
+  .pn .tape{display:none}
+  .v[data-open] .pn:not(.sq) .mh{display:none}
+  .pn .mh{position:absolute; inset:0; z-index:6; display:flex; flex-direction:column; justify-content:flex-end; align-items:flex-start; gap:12px; padding:20px var(--gutter) 24px; border:0; background:none; color:var(--paper); font:inherit; text-align:start; cursor:pointer}
+  .mh-c{display:inline-flex; align-items:center; gap:10px; font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase}
+  .mh-c b{display:grid; place-items:center; min-width:62px; height:24px; padding-inline:8px; background:var(--paper); color:var(--ink); border-radius:2px; font-size:12px}
+  .mh-c .jp{font-size:15px; letter-spacing:.04em}
+  .mh-t{font-size:clamp(60px,21vw,92px); font-weight:700; line-height:.92; letter-spacing:-.045em; padding-bottom:.06em}
+  .mh-a{position:absolute; inset-inline-end:var(--gutter); bottom:24px; width:56px; height:56px; display:grid; place-items:center; background:var(--ink); color:var(--paper)}
+  .mh-a svg{width:62%; height:62%; fill:none; stroke:currentColor; stroke-width:11; stroke-linecap:square}
+  .pn.sq .mh{flex-direction:row; align-items:center; justify-content:flex-start; gap:14px; padding:0 var(--gutter) env(safe-area-inset-bottom)}
+  .pn.sq .mh-c b{display:none} .pn.sq .mh-c .jp{font-size:22px}
+  .pn.sq .mh-t{font-size:24px; line-height:1; padding:0}
+  .pn.sq .mh-a{position:static; margin-inline-start:auto; width:40px; height:40px}
+  .pn.sq .mh-a svg{transform:rotate(-90deg)}
+  /* the opened half: a shorter header, then the products */
+  .o3 .pn{--ch:224px}
+  .hs{height:478px; min-height:0}
+
+  /* compare peek: four small cards, two by two, instead of a four-column table */
+  .ct .ct-pk{display:none}
+  .ct-cards{display:grid; grid-template-columns:1fr 1fr; gap:1.5px; background:var(--ink); border:1.5px solid var(--ink)}
+  .ctc{display:flex; flex-direction:column; gap:9px; min-width:0; padding:14px 12px 12px; background:var(--paper); color:var(--pc)}
+  .ctc-h{display:flex; align-items:flex-end; gap:10px; min-height:78px; margin-bottom:4px}
+  .ctc .bx{height:76px}
+  .ctc .nm{font-size:19px; line-height:1; padding-bottom:4px}
+  .ctr{display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:13px; font-weight:700}
+  .ctr b{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink)}
+  .ctr .mt{display:flex; gap:3px; flex:none; width:60px; height:8px}
+  .ctr.pb{padding-top:9px; border-top:1.5px solid var(--ink); color:var(--ink)}
+  .ct .ct-hd{margin-bottom:18px}
+  .ct .ct-bd{margin-top:18px}
+  .ct .cta{width:100%; justify-content:space-between}
+
+  /* compare popup: full screen, two matchas at a time, a fixed bar with the pickers */
+  .cw .sheet{inset:0; padding:0; border:0; display:flex; flex-direction:column; overflow:hidden}
+  .cw .xbtn{position:static; float:none; flex:none; align-self:flex-end; margin:12px 14px 10px}
+  .cw .sheet .cmp3{flex:1 1 auto; min-height:0; overflow-y:auto; overscroll-behavior:contain; padding:0 16px 32px}
+  .cmp3 .sh{display:block; margin-bottom:0; padding-bottom:18px; border-bottom:0}
+  .cmp3 .sh h2{font-size:36px}
+  .cmp3 .sh p{margin-top:8px; font-size:14px}
+  .cmp3 .chd{margin-bottom:10px}
+  .cpk{display:grid; grid-template-columns:27% 1fr 1fr; position:sticky; top:0; z-index:5; background:var(--ink); color:var(--paper); border:1.5px solid var(--ink)}
+  .cpk-l{display:flex; align-items:center; padding:0 10px; font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase}
+  .cps{position:relative; display:flex; align-items:center; justify-content:space-between; gap:6px; min-width:0; padding:12px 10px; background:var(--paper); color:var(--pc); border-inline-start:1.5px solid var(--ink)}
+  .cps-n{font-size:15px; font-weight:700; line-height:1.05; letter-spacing:-.02em}
+  .cps-c{flex:none; width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:12; stroke-linecap:square}
+  .cps select{position:absolute; inset:0; width:100%; height:100%; opacity:0; font-size:16px; cursor:pointer}
+  .cmp3 .full3{border-top:0}
+  .cmp3 .full3 thead{display:none}
+  .cmp3 .full3 .hc{display:none}
+  .cmp3 .full3 table{table-layout:fixed}
+  .cmp3 .full3 th,.cmp3 .full3 td{padding:10px; font-size:13px; line-height:1.3; overflow-wrap:anywhere}
+  .cmp3 .full3 th:first-child{width:27%; font-size:10px}
+  .cmp3 .full3 td .ty{height:22px; padding-inline:6px; font-size:10px}
+  .cmp3 .mv{gap:8px} .cmp3 .mv .meter{min-width:40px}
+}
+@media (max-width:360px){ .cmp3 .full3 td .ty{gap:3px; padding-inline:4px; font-size:9px} .cmp3 .full3 td .ty .jp{font-size:11px} }
 </style>
 
 <style id="sx-css">
@@ -996,13 +1074,14 @@ var NAMES={g1:'Quiet',g2:'Bag',g3:'Catalogue',g4:'Dense',g5:'Fields',g6:'By use'
 /* the squeezed side shows the Japanese and the word of the page's language (English, or Hebrew on a Hebrew page) */
 var HE=(document.documentElement.lang||'').slice(0,2)==='he';
 function tape(k){var u=''; for(var i=0;i<12;i++) u+='<span>'+D[k].kj+'</span><span class="lt'+(HE?' he':'')+'">'+(HE?D[k].he:D[k].w)+'</span>'; return '<div class="tape" aria-hidden="true"><div>'+u+'</div></div>'}
+function mh(k){var d=D[k]; return '<button type="button" class="mh" aria-label="Open '+d.w+'"><span class="mh-c"><b>'+d.chip+'</b><span class="jp">'+d.kj+'</span></span><span class="mh-t it">'+(HE?d.he:d.w)+'</span><span class="mh-a" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M12 50h66M52 22l28 28-28 28"/></svg></span></button>'}
 function pn(k){var d=D[k];
   return '<div class="pn '+k+'" role="region" aria-label="'+d.w+'" data-k="'+k+'"><div class="sv"><div class="hs">'
    +'<video class="hv" src="media/'+(k==='m'?'matcha':'tools')+'-hero.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1"></video><div class="hg" aria-hidden="true"></div>'
    +'<p class="ch chip rv"><b>'+d.chip+'</b><span class="jp">'+d.kj+'</span></p>'
    +'<h2 class="kj fd rv" style="--i:2">'+d.kj+'</h2>'
    +'<div class="card fd"><div><h3 class="ttl it">'+d.w+'</h3><p class="sn">'+d.sn+'</p></div><div class="c2"><p class="pa">'+d.pa+'</p></div></div>'
-   +'</div><div class="gin g6"></div></div>'+tape(k)+'</div>'}
+   +'</div><div class="gin g6"></div></div>'+tape(k)+mh(k)+'</div>'}
 document.addEventListener('animationend',function(e){ if(e.target.classList&&e.target.classList.contains('rv')) e.target.classList.remove('rv') });
 /* ---------- Compare Our Matcha: the Route option (SAMPLE data) ---------- */
 var CP=[
@@ -1034,10 +1113,17 @@ function cbx(n){return '<i class="bx" style="--img:var(--b'+n+')"></i>'}
 function cbyId(id){return CP.filter(function(p){return p.id===id})[0]}
 function chead(){return '<div class="sh"><div><p class="chd"><b>NM 05</b><span class="jp">比較</span><span>Compare</span></p><h2 class="it">Compare Our Matcha</h2><p>Every matcha on the line, side by side.</p></div></div>'}
 
+var CSEL=[0,1];
 function cmpHTML(){
-  /* the whole table, always open: every matcha next to each other (no picking two) */
-  var tb='<div class="full3"><table><thead><tr><th></th>'+CP.map(function(p){return '<th>'+p.n+'</th>'}).join('')+'</tr></thead><tbody>'+CATTR.map(function(t){ if(t[0]==='g') return '<tr><th colspan="5" style="background:var(--ink);color:var(--paper)">'+t[1]+'</th></tr>'; return '<tr><th>'+t[1]+'</th>'+CP.map(function(p){return '<td style="--pc:'+COL[p.c]+'">'+cdisp(p,t)+'</td>'}).join('')+'</tr>'}).join('')+'</tbody></table></div>';
-  return chead()+tb;
+  /* desktop: every matcha next to each other. Phones: two at a time, picked in the bar on top */
+  var hc=function(i){return CSEL.indexOf(i)<0?' hc':''};
+  var tb='<div class="full3"><table><thead><tr><th></th>'+CP.map(function(p,i){return '<th class="c'+i+hc(i)+'">'+p.n+'</th>'}).join('')+'</tr></thead><tbody>'+CATTR.map(function(t){ if(t[0]==='g') return '<tr><th colspan="'+(mob()?3:5)+'" style="background:var(--ink);color:var(--paper)">'+t[1]+'</th></tr>'; return '<tr><th>'+t[1]+'</th>'+CP.map(function(p,i){return '<td class="c'+i+hc(i)+'" style="--pc:'+COL[p.c]+'">'+cdisp(p,t)+'</td>'}).join('')+'</tr>'}).join('')+'</tbody></table></div>';
+  var pk='<div class="cpk"><span class="cpk-l">Compare</span>'+[0,1].map(function(slot){var cur=CP[CSEL[slot]]; return '<label class="cps" style="--pc:'+COL[cur.c]+'"><span class="cps-n it">'+cur.n+'</span><svg class="cps-c" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 36l30 30 30-30"/></svg><select data-csel="'+slot+'" aria-label="Matcha '+(slot+1)+'">'+CP.map(function(q,i){return '<option value="'+i+'"'+(i===CSEL[slot]?' selected':'')+'>'+q.n+'</option>'}).join('')+'</select></label>'}).join('')+'</div>';
+  return chead()+pk+tb;
+}
+function ctCards(){
+  var rows=[['Sweet',0],['Umami',1],['Bitter',3]];
+  return '<div class="ct-cards">'+CP.map(function(p){return '<div class="ctc" style="--pc:'+COL[p.c]+'"><div class="ctc-h">'+cbx(p.box)+'<span class="nm it">'+p.n+'</span></div>'+rows.map(function(r){return '<div class="ctr"><b>'+r[0]+'</b><span class="mt" style="--lv:'+p.t[r[1]]+'" role="img" aria-label="'+p.t[r[1]]+' of 5">'+cells5(p.t[r[1]])+'</span></div>'}).join('')+'<div class="ctr pb"><b>Per bowl</b><span>₪'+p.pb+'</span></div></div>'}).join('')+'</div>';
 }
 
 var CTR='<svg class="cr" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 14l36 36-36 36"/></svg>';
@@ -1068,7 +1154,7 @@ function fbCenter(){
   var txt=[].slice.call(document.querySelectorAll('.pn.m .card .sn,.pn.m .card .pa')), sec=g.querySelector('.sec:not(.off)'), h=sec&&sec.querySelector('.tx6 h3'); if(!txt.length||!h) return;
   fb.style.setProperty('--fbt','0px'); fb.style.setProperty('--fbm','0px');
   var above=Math.max.apply(null,txt.map(function(t){return t.getBoundingClientRect().bottom}));
-  var r=fb.getBoundingClientRect(), GA=140, GB=96, A0=r.top-above, B0=h.getBoundingClientRect().top-r.bottom;
+  var r=fb.getBoundingClientRect(), GA=mob()?36:140, GB=mob()?28:96, A0=r.top-above, B0=h.getBoundingClientRect().top-r.bottom;
   fb.style.setProperty('--fbt',Math.round(GA-A0)+'px'); fb.style.setProperty('--fbm',Math.round(GB-B0)+'px');
 }
 var fbT; function fbq(){ clearTimeout(fbT); fbT=setTimeout(fbCenter,40) }
@@ -1079,7 +1165,7 @@ function ctHTML(){
   var h='<div class="ct-rw"><b></b>'+CP.map(function(p){return '<div class="ct-hh" style="--pc:'+COL[p.c]+'">'+cbx(p.box)+'<span class="nm it">'+p.n+'</span></div>'}).join('')+'</div>';
   rows.forEach(function(r){h+='<div class="ct-rw"><b>'+r[0]+'</b>'+CP.map(function(p){return '<div style="--pc:'+COL[p.c]+'"><span class="mv"><span class="n">'+p.t[r[1]]+'</span><span class="mt" style="--lv:'+p.t[r[1]]+'" role="img" aria-label="'+p.t[r[1]]+' of 5">'+cells5(p.t[r[1]])+'</span></span></div>'}).join('')+'</div>'});
   h+='<div class="ct-rw"><b>Per bowl</b>'+CP.map(function(p){return '<div class="pbw">₪'+p.pb+'</div>'}).join('')+'</div>';
-  return '<section class="ct" id="ct"><div class="ct-hd"><div><p class="kk"><b>NM 05</b><span class="jp">比較</span><span>Compare</span></p><h2 class="it">Compare our matcha</h2></div><p>A first look at the table. The full one has '+nrows+' rows.</p></div><div class="ct-pk">'+h+'</div>'
+  return '<section class="ct" id="ct"><div class="ct-hd"><div><p class="kk"><b>NM 05</b><span class="jp">比較</span><span>Compare</span></p><h2 class="it">Compare our matcha</h2></div><p>A first look at the table. The full one has '+nrows+' rows.</p></div><div class="ct-pk">'+h+'</div>'+ctCards()
    +'<div class="ct-bd"><button type="button" class="cta" data-cmp>See the full table'+CTR+'</button></div></section>';
 }
 var cw=document.createElement('div'); cw.className='cw'; cw.id='cw';
@@ -1096,7 +1182,8 @@ document.addEventListener('click',function(e){
   if(e.target.closest('[data-cclose]')) cwClose();
 });
 document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&cw.classList.contains('on')) cwClose() });
-function cmpDraw(){ var s=document.querySelectorAll('.cmp3'); [].forEach.call(s,function(x){x.innerHTML=cmpHTML()}) }
+document.addEventListener('change',function(e){ var sl=e.target.closest&&e.target.closest('[data-csel]'); if(!sl) return; var slot=+sl.getAttribute('data-csel'), val=+sl.value, other=1-slot; if(val===CSEL[other]) CSEL[other]=CSEL[slot]; CSEL[slot]=val; cmpDraw() });
+function cmpDraw(){ var s=document.querySelectorAll('.cmp3'); [].forEach.call(s,function(x){var st=x.scrollTop; x.innerHTML=cmpHTML(); x.scrollTop=st}) }
 
 var main=document.getElementById('main');
 main.innerHTML='<section class="v o3" id="hero">'+pn('m')+pn('t')+'</section>';
@@ -1104,6 +1191,7 @@ var v=document.getElementById('hero'), curG='g6', lock=0;
 function fill(){ ['m','t'].forEach(function(k){ v.querySelector('.pn.'+k+' .gin').innerHTML=G[curG](k)+''; }) }
 fill();
 fbq(); setTimeout(fbCenter,400); setTimeout(fbCenter,1500); if(window.ResizeObserver) new ResizeObserver(fbq).observe(v.querySelector('.pn.m')); window.addEventListener('resize',fbq); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fbq);
+function mob(){return matchMedia('(max-width:640px)').matches}
 var open=null, SV={m:v.querySelector('.pn.m .sv'),t:v.querySelector('.pn.t .sv')};
 function setOpen(k){
   if(open===k) return; open=k;
@@ -1115,7 +1203,7 @@ function setOpen(k){
 ['m','t'].forEach(function(k){
   SV[k].addEventListener('scroll',function(){
     var s=SV[k].scrollTop;
-    if(s>10) setOpen(k); else if(s<=2&&open===k) setOpen(null);
+    if(s>10) setOpen(k); else if(s<=2&&open===k&&!mob()) setOpen(null);
   },{passive:true});
 });
 function toGrid(k){ var sv=SV[k]; sv.scrollTo({top:sv.querySelector('.hs').offsetHeight,behavior:'smooth'}) }
@@ -1155,6 +1243,7 @@ document.addEventListener('click',function(e){
   var ad=t.closest('[data-add]'); if(ad){ e.preventDefault(); var cd=ad.closest('.pc'),nme=cd&&cd.querySelector('.nm'); if(window.NMCart&&nme) NMCart.addByName(nme.firstChild.textContent.trim()); ad.classList.add('done'); setTimeout(function(){ad.classList.remove('done')},1400); return }
   var cdd=t.closest('.g6 .pc'); if(cdd&&!matchMedia('(hover:hover)').matches&&!t.closest('[data-add],.ac-buy')) cdd.classList.toggle('flip');
   var p=t.closest('.pn');
+  if(p&&mob()&&(!open||p.classList.contains('sq'))){ var mk=p.getAttribute('data-k'); setOpen(mk); SV[mk].scrollTop=0; return }
   if(p&&p.classList.contains('sq')){ var kk=p.getAttribute('data-k'); setOpen(kk); toGrid(kk); return }
   if(p&&!v.getAttribute('data-open')&&!matchMedia('(hover:hover)').matches){ var k=p.getAttribute('data-k'); v.setAttribute('data-act',v.getAttribute('data-act')===k?'':k) }
   if(t.closest('a[href="#"]')) e.preventDefault();
