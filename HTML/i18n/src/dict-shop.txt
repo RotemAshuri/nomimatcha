@@ -1,0 +1,50 @@
+# ---- shop
+Nomimatcha | Shop || נומימאצ׳ה | חנות
+Compare our matcha || השוואת המאצ׳ות שלנו
+Four matchas from Aichi and two sets. || ארבע מאצ׳ות מאייצ׳י ושני סטים.
+We import ceremonial matcha straight from tea farms in Aichi, Japan. No middlemen, so every tin names its farm and its harvest. Choose usucha for a thin, frothy bowl, or koicha for a thick, glossy one. || אנחנו מייבאים מאצ׳ה טקסית ישירות מחוות תה באייצ׳י שביפן. בלי מתווכים, ולכן על כל קופסה מצוינים החווה והקטיף. בחרו אוסוצ׳ה לקערה דקה ומוקצפת, או קוצ׳ה לקערה סמיכה ומבריקה.
+Filter the matchas || סינון המאצ׳ות
+All || הכול
+Thin tea, whisked light and frothy. The everyday bowl and the base for lattes. || תה דק, מוקצף קל ורך. קערת היומיום והבסיס ללאטה.
+Thick tea, kneaded into a glossy paste. Deep and sweet, made for slow moments. || תה סמיך, מעוך לעיסה מבריקה. עמוק ומתוק, שנועד לרגעים איטיים.
+Start with a tasting trio, or give someone their first bowl. || מתחילים בשלישיית טעימה, או נותנים למישהו את הקערה הראשונה שלו.
+Compare || השוואה
+A first look at the table. The full one has 20 rows. || הצצה ראשונה לטבלה. בטבלה המלאה יש 20 שורות.
+Per bowl || לקערה
+See the full table || לטבלה המלאה
+Open Matcha || פתיחת המאצ׳ה
+Open Tools || פתיחת הכלים
+Whisk, bowl, scoop, sieve and more. || מקצף, קערה, כפית, מסננת ועוד.
+Everything for a proper bowl: a bamboo whisk, a wide bowl, a scoop and a sieve. Chosen to work with our matcha, so the first bowl is the best bowl. Buy them one by one, or as a starter kit. || כל מה שצריך לקערה כמו שצריך: מקצף במבוק, קערה רחבה, כפית ומסננת. נבחרו כך שיעבדו היטב עם המאצ׳ה שלנו, כדי שהקערה הראשונה תהיה הטובה ביותר. אפשר לקנות אחד אחד, או כערכת פתיחה.
+Brew || הכנת התה
+Whisk, bowl and everything that touches the tea. || מקצף, קערה וכל מה שנוגע בתה.
+Prepare || הכנה מקדימה
+Measure and sift before the water goes in. || מודדים ונופים לפני שהמים נכנסים.
+Care and kits || טיפוח וערכות
+Keep the whisk in shape, or start with a kit. || שומרים על צורת המקצף, או מתחילים בערכה.
+# ---- compare table (full)
+Compare Our Matcha || השוואת המאצ׳ות שלנו
+Every matcha on the line, side by side. || כל המאצ׳ות בקו, זו לצד זו.
+/^Matcha (\d)$/ || מאצ׳ה $1
+Basics || בסיס
+愛知 Aichi || 愛知 אייצ׳י
+First flush, 2026 || קטיף ראשון, 2026
+Fresh green || ירוק רענן
+Deep green || ירוק עמוק
+Dark moss || ירוק אזוב כהה
+Body || גוף
+Foam || קצף
+Use || שימוש
+Best for || הכי מתאימה ל
+Daily bowl, lattes || קערת יומיום, לאטה
+Bright, foamy bowls || קערות בהירות ומוקצפות
+Slow, thick bowls || קערות סמיכות ואיטיות
+Sharing, ceremony || שיתוף, טקס
+How much || כמה
+2 g · 70 ml · whisk || 2 גרם · 70 מ״ל · הקצפה
+4 g · 40 ml · knead || 4 גרם · 40 מ״ל · לישה
+Good in a latte || טובה בלאטה
+No || לא
+Price || מחיר
+Tin || קופסה
+Bowls per tin || קערות בקופסה

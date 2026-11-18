@@ -1,0 +1,59 @@
+# ---- help centre
+Help <b>centre</b> || מרכז <b>עזרה</b>
+Questions on the right. Not there? Write to us here, a person answers. || השאלות מימין. לא מצאתם? כתבו לנו כאן, בן אדם עונה.
+Orders & delivery || הזמנות ומשלוחים
+Shipping, tracking, and what to do if something goes wrong on the way. || משלוחים, מעקב, ומה עושים אם משהו משתבש בדרך.
+Where do you deliver? || לאן אתם שולחים?
+All over Israel: courier to your door, or a pickup point near you. We don’t ship abroad yet. Type your address at checkout and it tells you straight away whether we reach it. || בכל רחבי ישראל: שליח עד הדלת, או נקודת איסוף קרובה אליכם. עדיין לא שולחים לחו״ל. מקלידים כתובת בקופה, ומיד רואים אם אנחנו מגיעים אליה.
+When will my order arrive? || מתי ההזמנה שלי תגיע?
+Orders placed before 14:00 leave us the next business day. Delivery takes 2–4 business days, a little longer to Eilat and the periphery. || הזמנות שנעשות לפני 14:00 יוצאות מאיתנו ביום העסקים הבא. המשלוח לוקח 2–4 ימי עסקים, מעט יותר לאילת ולפריפריה.
+Is shipping free? || האם המשלוח חינם?
+Free on orders over ₪250. Under that, courier delivery is a flat ₪25. || חינם בהזמנות מעל ₪250. מתחת לזה, משלוח בשליח הוא ₪25 קבוע.
+My parcel arrived damaged or opened. What now? || החבילה הגיעה פגומה או פתוחה. מה עושים?
+Photograph the parcel and the tin and send it to us within 48 hours. We ship a replacement, and you don’t need to send anything back. || מצלמים את החבילה ואת הקופסה ושולחים לנו תוך 48 שעות. אנחנו שולחים תחליף, ואין צורך להחזיר כלום.
+How do I track my order? || איך עוקבים אחרי ההזמנה?
+You get a tracking link by email and SMS the moment it leaves us. Lost it? Write to us with your order number and we’ll resend it. || קישור למעקב מגיע באימייל ובהודעת SMS ברגע שהחבילה יוצאת מאיתנו. איבדתם אותו? כתבו לנו עם מספר ההזמנה ונשלח שוב.
+Payment || תשלום
+Cards, instalments and invoices. || כרטיסים, תשלומים וחשבוניות.
+Which payment methods do you accept? || באילו אמצעי תשלום אתם מקבלים?
+Credit cards, Bit, Apple Pay and Google Pay. Payments are handled by the payment provider, so we never see your card details. || כרטיסי אשראי, Bit, Apple Pay ו־Google Pay. התשלומים מטופלים על ידי חברת הסליקה, ולכן אנחנו אף פעם לא רואים את פרטי הכרטיס שלכם.
+Can I pay in instalments? || אפשר לשלם בתשלומים?
+Yes. Up to 3 interest-free instalments on orders over ₪300, chosen at checkout. || כן. עד 3 תשלומים ללא ריבית בהזמנות מעל ₪300, נבחרים בקופה.
+My payment was declined. What should I do? || התשלום שלי נדחה. מה לעשות?
+Check the details and your card limit, then try again. If it still fails, use another method or write to us and we’ll complete the order with you by hand. || בודקים את הפרטים ואת מסגרת האשראי, ומנסים שוב. אם זה עדיין נכשל, משתמשים באמצעי תשלום אחר או כותבים לנו ונשלים את ההזמנה איתכם ידנית.
+Do I get an invoice? || אני מקבל חשבונית?
+A tax invoice arrives by email right after payment. Need it in a company’s name? Tell us before the order ships. || חשבונית מס מגיעה באימייל מיד אחרי התשלום. צריכים אותה על שם חברה? ספרו לנו לפני שההזמנה יוצאת.
+Product & storage || מוצר ואחסון
+Where it comes from, and how to keep it at its best. || מאיפה זה מגיע, ואיך שומרים על זה במיטבו.
+Where is Nomimatcha made? || איפה נומימאצ׳ה מיוצרת?
+At Nanzan-en (南山園), a tea farm in Aichi, Japan. We buy straight from the farm and import it ourselves, so there are no middlemen. Every tin says where its tea was grown. || ב־Nanzan-en (南山園), חוות תה באייצ׳י שביפן. אנחנו קונים ישירות מהחווה ומייבאים בעצמנו, ולכן אין מתווכים. על כל קופסה כתוב איפה התה שלה גדל.
+How should I store my matcha? || איך לאחסן את המאצ׳ה?
+Keep the tin sealed, away from light, heat and moisture. Once opened, keep it in the fridge and finish it within about two months for the best taste and colour. || שומרים את הקופסה סגורה, הרחק מאור, חום ולחות. אחרי הפתיחה שומרים במקרר וגומרים תוך כחודשיים, לטעם ולצבע הטובים ביותר.
+Unopened tins keep for up to 12 months. The date is printed on the bottom of the tin. || קופסאות סגורות נשמרות עד 12 חודשים. התאריך מודפס בתחתית הקופסה.
+Is anything added to it? || האם מוסיפים לזה משהו?
+No. It is only finely ground tea leaves. No sugar, no flavouring, nothing else. || לא. זה רק עלי תה טחונים דק. בלי סוכר, בלי תוספות טעם, בלי שום דבר אחר.
+Matcha & brewing || מאצ׳ה והכנה
+The questions we get most about the tea itself. || השאלות שאנחנו מקבלים הכי הרבה על התה עצמו.
+What’s the difference between ceremonial and culinary matcha? || מה ההבדל בין מאצ׳ה טקסית למאצ׳ה לבישול?
+Ceremonial matcha comes from the youngest shade-grown leaves, stone-ground fine and meant to be whisked with water. Culinary matcha is stronger and more bitter, so it holds up in baking and with milk. We sell ceremonial grades. || מאצ׳ה טקסית מגיעה מהעלים הצעירים ביותר שגדלו בצל, טחונה דק באבן ומיועדת להקצפה עם מים. מאצ׳ה לבישול חזקה ומרירה יותר, ולכן היא עומדת באפייה ובשילוב עם חלב. אנחנו מוכרים דרגות טקסיות.
+Which one is best for a latte? || איזו הכי מתאימה ללאטה?
+Any of ours works. The bolder grades stand up better to milk; the taste meter on each product page shows which is which. || כל אחת מהמאצ׳ות שלנו מתאימה. הדרגות העזות יותר מחזיקות מעמד טוב יותר מול חלב; מד הטעם בעמוד של כל מוצר מראה איזו איזו.
+How do I make good matcha? || איך מכינים מאצ׳ה טובה?
+2 g of matcha, 70 ml of water at 80°C, and about 20 seconds of whisking in a zigzag. Sift the powder first so it doesn’t clump. || 2 גרם מאצ׳ה, 70 מ״ל מים ב־80°C, וכ־20 שניות של הקצפה בתנועת זיגזג. מנפים את האבקה קודם כדי שלא תתגבש לגושים.
+How much caffeine is in it? || כמה קפאין יש בה?
+Less than a cup of coffee per serving. The L-theanine in matcha also makes the lift feel calmer and longer. || פחות מספל קפה למנה. גם ה־L־תיאנין במאצ׳ה גורם לעוררות להרגיש רגועה וארוכה יותר.
+Name || שם
+What is it about? || במה מדובר?
+Order || הזמנה
+Product || מוצר
+Order number || מספר הזמנה
+(optional) || (לא חובה)
+Message || הודעה
+Send message || שליחת הודעה
+Help <b>centre</b><span class="jp">案内所</span> || מרכז <b>עזרה</b><span class="jp">案内所</span>
+NM 05 · 案内 Help || NM 05 · 案内 עזרה
+The usual questions about delivery, payment and storage, answered straight. Not here? Write to us and a person answers, usually within one business day. || השאלות הרגילות על משלוח, תשלום ואחסון, עם תשובות ישירות. לא מצאתם? כתבו לנו ובן אדם עונה, בדרך כלל תוך יום עסקים אחד.
+Didn’t find your answer? || לא מצאתם¦תשובה?
+Write to us and a person answers, usually within one business day. || כתבו לנו ובן אדם עונה, בדרך כלל תוך יום עסקים אחד.
+Pick a topic to see its questions. Not there? Write to us at the bottom. || בוחרים נושא ורואים את השאלות שלו. לא שם? כותבים לנו למטה.
+Write to us. A person reads every message and answers, usually within one business day. || כתבו לנו. בן אדם קורא כל הודעה ועונה, בדרך כלל תוך יום עסקים אחד.

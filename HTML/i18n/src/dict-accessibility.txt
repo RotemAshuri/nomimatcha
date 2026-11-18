@@ -1,0 +1,55 @@
+# ---- accessibility statement
+NM 06 · 規約 Legal || NM 06 · 規約 משפטי
+Matcha is for everyone, so the site should be too. This is what we have done, where we still fall short, and who to write to. || מאצ׳ה היא לכולם, ולכן גם האתר צריך להיות כזה. כאן מה שעשינו, איפה אנחנו עדיין חסרים, ולמי לכתוב.
+Our commitment || המחויבות שלנו
+The standard we follow || התקן שאנחנו פועלים לפיו
+What we have done || מה עשינו
+Known limitations || מגבלות ידועות
+Using the site your way || שימוש באתר בדרך שלכם
+Physical access || נגישות פיזית
+Accessibility coordinator || רכז/ת נגישות
+About this statement || על ההצהרה הזו
+We build the site to meet the Israeli accessibility standard (IS 5568, WCAG level AA). It works with a keyboard, a screen reader and large text. A few things aren’t perfect yet and we list them below. If something stops you, write to our accessibility coordinator and we fix it or find another way to serve you. || אנחנו בונים את האתר בהתאם לתקן הנגישות הישראלי (ת״י 5568, רמת AA של WCAG). הוא עובד עם מקלדת, קורא מסך וטקסט גדול. כמה דברים עדיין לא מושלמים ואנחנו מפרטים אותם למטה. אם משהו מונע מכם להשתמש באתר, כתבו לרכז/ת הנגישות שלנו ונתקן או נמצא דרך אחרת לשרת אתכם.
+Everyone should be able to browse, choose and order without help. We design with that in mind from the start, and we test it rather than assume it. || כל אחד צריך להיות מסוגל לגלוש, לבחור ולהזמין בלי עזרה. אנחנו מתכננים עם זה בראש מההתחלה, ובודקים את זה ולא מניחים.
+The site is adjusted to the requirements of the Equal Rights for Persons with Disabilities Regulations (Service Accessibility Adjustments), 2013, and to Israeli Standard 5568, which is based on WCAG 2.0 level AA. We aim for WCAG 2.2 AA where we can. || האתר מותאם לדרישות תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע״ג-2013, ולתקן הישראלי 5568, המבוסס על WCAG 2.0 ברמה AA. אנחנו שואפים ל־WCAG 2.2 AA היכן שאפשר.
+Keyboard. || מקלדת.
+Every link, button and form works with Tab, Shift+Tab, Enter and Esc, in a logical order, and a “Skip to content” link comes first. || כל קישור, כפתור וטופס עובדים עם Tab, ‏Shift+Tab, ‏Enter ו־Esc, בסדר הגיוני, וקישור ״דלגו לתוכן״ מופיע ראשון.
+Focus. || מיקוד.
+Whatever you are on has a clear outline. || לכל מה שנמצאים עליו יש מסגרת ברורה.
+Screen readers. || קוראי מסך.
+Pages use proper headings and landmarks, buttons and links have names, icons that carry meaning are labelled, and form fields have labels. || בעמודים יש כותרות ואזורי ציון דרך תקינים, לכפתורים ולקישורים יש שמות, לסמלים בעלי משמעות יש תיוג, ולשדות בטפסים יש תוויות.
+Colour and contrast. || צבע וניגודיות.
+Text meets AA contrast. We never rely on colour alone to say something. || הטקסט עומד בניגודיות AA. אנחנו אף פעם לא מסתמכים על צבע בלבד כדי להעביר משהו.
+Text size. || גודל טקסט.
+You can enlarge text up to 200% with your browser without losing content or function. || אפשר להגדיל טקסט עד 200% בדפדפן בלי לאבד תוכן או פונקציה.
+Motion. || תנועה.
+Moving elements respect the “reduce motion” setting on your device. || אלמנטים נעים מכבדים את הגדרת ״הפחתת תנועה״ במכשיר שלכם.
+Languages. || שפות.
+Hebrew, English and Japanese text are marked with their language, and the Hebrew pages read right to left. || טקסט בעברית, באנגלית וביפנית מסומן בשפתו, והעמודים בעברית נקראים מימין לשמאל.
+Forms and errors. || טפסים ושגיאות.
+Errors are described in words and the field is brought into focus. || שגיאות מתוארות במילים והשדה מקבל מיקוד.
+We would rather tell you than hide it. These are not fully accessible yet, and we are working on them. || מעדיפים לומר ולא להסתיר. אלה עדיין לא נגישים במלואם, ואנחנו עובדים על זה.
+The issue || הבעיה
+What helps now || מה עוזר כרגע
+Hero and station animations || אנימציות ההירו והתחנות
+Some animation may not stop in every browser || ייתכן שחלק מהאנימציות לא ייעצרו בכל דפדפן
+Turn on “reduce motion”, or write to us || מפעילים ״הפחתת תנועה״, או כותבים לנו
+Product videos || סרטוני מוצר
+No captions or text description yet || עדיין אין כתוביות או תיאור טקסטואלי
+Product details are all in text on the page || כל פרטי המוצר כתובים כטקסט בעמוד
+Payment page || עמוד התשלום
+Run by our payment provider, outside our control || מופעל על ידי חברת הסליקה, מחוץ לשליטתנו
+Order by email or phone and we help you pay || מזמינים באימייל או בטלפון ואנחנו עוזרים לשלם
+Older PDFs || קובצי PDF ישנים
+Some are scans without a text layer || חלקם סריקות בלי שכבת טקסט
+Ask and we send the content as text || מבקשים ואנחנו שולחים את התוכן כטקסט
+This list is a sample. It will be replaced with the findings of the real accessibility audit. || הרשימה הזו היא דוגמה. היא תוחלף בממצאי ביקורת הנגישות האמיתית.
+Zoom with Ctrl or Cmd and + or −. The layout adapts. || מגדילים עם Ctrl או Cmd ועם + או −. הפריסה מתאימה את עצמה.
+Press Esc to close the menu or any open panel. || לוחצים Esc כדי לסגור את התפריט או כל לוח פתוח.
+Screen reader and voice control users: all controls have text names you can say out loud. || משתמשי קורא מסך ובקרה קולית: לכל הפקדים יש שמות טקסטואליים שאפשר לומר בקול.
+Prefer not to use the site? Order by email or WhatsApp and we take the order by hand. || מעדיפים לא להשתמש באתר? מזמינים באימייל או בוואטסאפ ואנחנו לוקחים את ההזמנה ידנית.
+We don’t run a shop open to the public. Orders are delivered to your door or to a pickup point, and meetings at our office are by appointment. Tell us what you need and we arrange it: || אין לנו חנות הפתוחה לקהל. הזמנות נמסרות עד הדלת או לנקודת איסוף, ופגישות במשרד שלנו בתיאום מראש. ספרו לנו מה אתם צריכים ונסדר את זה:
+Found something that doesn’t work, or need the content in another form? Write to our coordinator. Say which page, what you were trying to do, and what device or assistive tool you use. We answer within 5 business days. || מצאתם משהו שלא עובד, או צריכים את התוכן בצורה אחרת? כתבו לרכז/ת שלנו. ציינו באיזה עמוד, מה ניסיתם לעשות, ובאיזה מכשיר או כלי עזר אתם משתמשים. אנחנו עונים תוך 5 ימי עסקים.
+This statement was last updated on 16 November 2026. The site was last checked for accessibility on || ההצהרה הזו עודכנה לאחרונה ב־16 בנובמבר 2026. האתר נבדק לאחרונה מבחינת נגישות ב
+, by || , על ידי
+. We review it again with every significant change to the site. || . אנחנו בודקים אותו שוב עם כל שינוי משמעותי באתר.

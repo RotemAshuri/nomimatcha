@@ -1,0 +1,33 @@
+# ---- legal pages: shared labels, placeholders
+NM 06 · 規約 Legal || NM 06 · 規約 משפטי
+Last updated || עודכן לאחרונה
+Version || גרסה
+Applies to || חל על
+Legal pages || עמודים משפטיים
+Other legal pages || עמודים משפטיים נוספים
+Privacy || פרטיות
+Accessibility || נגישות
+Terms || תנאי שימוש
+On this page || בעמוד זה
+In plain words || במילים פשוטות
+Contact || יצירת קשר
+Hours || שעות פעילות
+Phone || טלפון
+Post || דואר
+WhatsApp || וואטסאפ
+Sun–Thu, 9:00–17:00 || א׳–ה׳, 9:00–17:00
+16 Nov 2026 || 16 בנובמבר 2026
+16 November 2026 || 16 בנובמבר 2026
+Sample legal copy, to be reviewed by a lawyer before launch || נוסח משפטי לדוגמה, יש לבדוק אותו מול עורך דין לפני ההשקה
+Names, numbers and addresses in brackets are placeholders || שמות, מספרים וכתובות בסוגריים מרובעים הם מקומות שמורים להשלמה
+[Legal entity name] || [שם הישות המשפטית]
+[Company no.] || [מספר חברה]
+[Registered address] || [כתובת רשומה]
+[City] || [עיר]
+[Name and role] || [שם ותפקיד]
+[Name] || [שם]
+[Phone number] || [מספר טלפון]
+[Office address and access details] || [כתובת המשרד ופרטי הנגישות]
+[Audit date] || [תאריך הביקורת]
+[Auditor or tool] || [מבקר או כלי]
+Coordinator || רכז/ת

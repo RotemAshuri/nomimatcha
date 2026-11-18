@@ -1,0 +1,134 @@
+# ---- product page (matcha)
+Nomimatcha | Product || נומימאצ׳ה | מוצר
+Show Packs || הצגת אריזות
+Packs || אריזות
+Show Powder || הצגת האבקה
+Powder || אבקה
+Show Stamp || הצגת החותמת
+Stamp || חותמת
+Shop || חנות
+Tasting notes || תווי טעם
+Size || גודל
+Purchase || רכישה
+One-time || חד־פעמי
+Subscribe, every 4 weeks || מנוי, כל 4 שבועות
+Skip or cancel any time || אפשר לדלג או לבטל בכל זמן
+Save 10% || חסכו 10%
+Fewer || פחות
+More || עוד
+Add to bag || הוספה לעגלה
+Add selection to bag || הוספת הבחירה לעגלה
+Free delivery over ₪250 || משלוח חינם מעל ₪250
+Ships from Tel Aviv in 1–2 days || יוצא מתל אביב תוך 1–2 ימים
+Taste and facts || טעם ועובדות
+How to make it || איך מכינים
+Tools set || ערכת כלים
+Shipping and care || משלוח וטיפול
+Details || פרטים
+Grade || דרגה
+Cultivar || זן
+Region || אזור
+Farm || חווה
+Harvest || קציר
+Milling || טחינה
+Stone-milled || טחינת אבן
+Colour || צבע
+Batch || אצווה
+Usucha 薄茶 || אוסוצ׳ה 薄茶
+Koicha 濃茶 || קוצ׳ה 濃茶
+Nishio, Aichi, Japan || נישיו, אייצ׳י, יפן
+First flush, May 2026 (一番茶) || קטיף ראשון, מאי 2026 (一番茶)
+Trace this tin || מעקב אחרי הקופסה
+Pick || קטיף
+Mill || טחינה
+Ship || שילוח
+Shelf || מדף
+Bought || נרכשה
+Direct, no broker || ישירות, בלי מתווך
+Best for this tin || הכי מתאימה לקופסה הזו
+Latte || לאטה
+Sweet pea || אפונה מתוקה
+Citrus zest || קליפת הדרים
+Clean finish || סיום נקי
+White chestnut || ערמון לבן
+Steamed rice || אורז מאודה
+Soft cream || שמנת רכה
+Dark chocolate || שוקולד מריר
+Sweet corn || תירס מתוק
+Long finish || סיום ארוך
+Toasted nori || אצת נורי קלויה
+Fresh grass || עשב טרי
+Savoury depth || עומק מלוח
+Sweetness || מתיקות
+Bitterness || מרירות
+Grassiness || טעם עשבי
+Bright jade || ג׳ייד בהיר
+Vivid green || ירוק חי
+Deep emerald || אזמרגד עמוק
+Dark green || ירוק כהה
+Sakurai family farm || חוות משפחת Sakurai
+Hoshino tea garden || גן התה Hoshino
+Koyama estate || אחוזת Koyama
+Tanabe tea fields || שדות התה Tanabe
+Sakurai family farm, Nishio || חוות משפחת Sakurai, נישיו
+Hoshino tea garden, Nishio || גן התה Hoshino, נישיו
+Koyama estate, Nishio || אחוזת Koyama, נישיו
+Tanabe tea fields, Nishio || שדות התה Tanabe, נישיו
+Round and sweet with a gentle umami. An easy first bowl, and a lovely base for a latte. || עגולה ומתוקה עם אומאמי עדין. קערה ראשונה קלה, ובסיס נהדר ללאטה.
+Bright umami and a clean, lifted finish. Lively on its own and sharp enough to stand up in a latte. || אומאמי בהיר וסיום נקי ומרומם. תוססת כשהיא לבד, וחדה מספיק כדי להחזיק מעמד בלאטה.
+Deep sweetness and almost no bitterness. Made to be kneaded thick, one slow bowl at a time. || מתיקות עמוקה וכמעט בלי מרירות. נועדה ללישה סמיכה, קערה איטית אחת בכל פעם.
+Grassy depth and a long, savoury finish. For slow moments and anyone who likes tea with some edge. || עומק עשבוני וסיום ארוך ומלוח. לרגעים איטיים ולכל מי שאוהב תה עם קצת חדות.
+/^Grown by the (\w+) family on a sunny slope in Nishio, Aichi\. We buy straight from the farm, with no auction and no middlemen\.$/ || גודלה על ידי משפחת $1 על מדרון שמשי בנישיו, אייצ׳י. אנחנו קונים ישירות מהחווה, בלי מכרז ובלי מתווכים.
+/^About (\d+) bowls · ₪([\d.]+) a bowl$/ || בערך $1 קערות · ₪$2 לקערה
+/^In stock · (batch|set) (.+)$/ || =>function(m,a,b){return 'במלאי · '+(a==='set'?'סט ':'אצווה ')+b}
+/^(\d+) days under cover$/ || $1 ימי הצללה
+/^From 18 April · (\d+) days under cover$/ || מ־18 באפריל · $1 ימי הצללה
+/^Hand-picked (\d+) May 2026 · first flush$/ || נקטף ביד ב־$1 במאי 2026 · קטיף ראשון
+/^(\d+ g) · (Usucha|Koicha)$/ || =>function(m,a,b){return a+' · '+(b==='Usucha'?'אוסוצ׳ה':'קוצ׳ה')}
+/^Save ₪(\d+)$/ || חסכו ₪$1
+Stone-milled slowly, about 40 g an hour || נטחנת לאט באבן, בערך 40 גרם לשעה
+Air freight, Aichi to Tel Aviv || מטען אווירי, מאייצ׳י לתל אביב
+Packed in Tel Aviv, 1–2 days to you || נארזת בתל אביב, יום עד יומיים עד אליכם
+matcha, about 2 scoops || מאצ׳ה, בערך 2 כפיות
+matcha, about 4 scoops || מאצ׳ה, בערך 4 כפיות
+water at 80°C || מים ב־80°C
+water at 70°C || מים ב־70°C
+cold or steamed milk || חלב קר או מוקצף
+whisked in a W || מוקצפת בתנועת W
+kneaded slowly || נלושה לאט
+Sift || ניפוי
+Pour || מזיגה
+Drink || שתייה
+Knead || לישה
+Sip || לגימה
+Add || הוספה
+2 g of matcha into a warm, dry bowl. || 2 גרם מאצ׳ה לקערה חמה ויבשה.
+4 g of matcha into a warm, dry bowl. || 4 גרם מאצ׳ה לקערה חמה ויבשה.
+2 g of matcha into a bowl or small jug. || 2 גרם מאצ׳ה לקערה או לקנקן קטן.
+70 ml of water at 80°C. Not boiling. || 70 מ״ל מים ב־80°C. לא רותחים.
+40 ml of water at 70°C. || 40 מ״ל מים ב־70°C.
+40 ml of water at 80°C. || 40 מ״ל מים ב־80°C.
+in a quick W motion for 15 seconds, until foamy. || בתנועת W מהירה במשך 15 שניות, עד שנוצר קצף.
+it from the bowl while the foam is still fine. || מהקערה, כשהקצף עדיין עדין.
+slowly with the whisk for 20 seconds, no foam, until glossy. || לאט עם המקצף במשך 20 שניות, בלי קצף, עד שמבריק.
+in small mouthfuls. It is meant to be shared. || בלגימות קטנות. זה נועד להתחלק.
+to a smooth, thin paste. || לעיסה חלקה ודקה.
+over 150 ml of milk, cold with ice or steamed. || על 150 מ״ל חלב, קר עם קרח או מוקצף.
+Usucha is thin tea: light, frothy and sweet. It is the everyday bowl. || אוסוצ׳ה היא תה דק: קל, מוקצף ומתוק. זו קערת היומיום.
+Koicha is thick tea, almost a glossy paste. It needs a tea with deep sweetness, and a slower hand. || קוצ׳ה היא תה סמיך, כמעט עיסה מבריקה. היא דורשת תה עם מתיקות עמוקה, ויד איטית יותר.
+Any matcha works in a latte, but the sweeter ones need less sugar. || כל מאצ׳ה מתאימה ללאטה, אבל המתוקות יותר צריכות פחות סוכר.
+First-bowl set || סט הקערה הראשונה
+Complete the bowl || להשלים את הקערה
+Tools to go with it || כלים שמתאימים לה
+Good to know || טוב לדעת
+Shipping and delivery || משלוח ואספקה
+How to store it || איך לאחסן
+How many bowls are in a tin? || כמה קערות יש בקופסה?
+What does “ceremonial” mean here? || מה המשמעות של “טקסית” כאן?
+Free delivery in Israel on orders over ₪250. Every order is packed in Tel Aviv and ships in 1–2 business days. Delivery usually takes 2–4 days. || משלוח חינם בישראל בהזמנות מעל ₪250. כל הזמנה נארזת בתל אביב ויוצאת תוך 1–2 ימי עסקים. המשלוח מגיע בדרך כלל תוך 2–4 ימים.
+Keep the tin sealed, cool and dark. Once opened, store it in the fridge and use it within 8 weeks. Let the tin warm up before you open it, so no water gets in. || שומרים את הקופסה סגורה, במקום קריר וחשוך. אחרי הפתיחה מאחסנים במקרר ומשתמשים תוך 8 שבועות. מחכים שהקופסה תתחמם לפני הפתיחה, כדי שלא ייכנסו אליה מים.
+A 30 g tin makes about 15 bowls of usucha (2 g each), or 7 bowls of koicha (4 g each). The 100 g size works out cheaper per bowl. || קופסה של 30 גרם מספיקה לכ־15 קערות אוסוצ׳ה (2 גרם כל אחת), או ל־7 קערות קוצ׳ה (4 גרם כל אחת). גודל 100 גרם משתלם יותר לקערה.
+It means shade-grown first-flush leaves, picked by hand, stone-milled and sold fresh. We name the farm and the harvest on every tin, so you can check it yourself. || זה אומר עלים מקטיף ראשון שגדלו בצל, נקטפו ביד, נטחנו באבן ונמכרים טריים. אנחנו מציינים את החווה ואת הקטיף על כל קופסה, כך שאפשר לבדוק בעצמכם.
+Next stops || התחנות הבאות
+Other matchas || מאצ׳ות נוספות
+Quick buy || קנייה מהירה

@@ -1,0 +1,69 @@
+/* Hebrew mode (html.he). Adapter Hebrew Text for Hebrew letters, Degular stays for Latin + digits. */
+html.he{--font:"Adapter Hebrew Text","Degular",system-ui,-apple-system,"Segoe UI",sans-serif;--sx-fn:var(--font)}
+html.he body,html.he input,html.he button,html.he select,html.he textarea{font-family:var(--font)}
+
+/* ---- scenes that are laid out as art (hero stage, tiles, marquees): keep their geometry LTR, only the copy reads RTL */
+html.he .hero1{direction:ltr}
+html.he #hz .card{direction:rtl}
+/* home hero + collection track: the journey is mirrored in Hebrew. The red frame and the windows are anchored on the right, the page script scrolls them to the right (new things arrive from the left), window 01 comes first on the right. Only the layout is mirrored: the mountain and tins are never flipped, and the Japanese words keep their own left-to-right order. */
+html.he #s2.hero :is(.hbx,.hl2,.ld,.cta4,.hl,.hlede,.hcta){direction:rtl}
+html.he #s2.hero .strip{direction:ltr}   /* the marquee loops from the left edge */
+html.he #s2.hero .strip span{direction:rtl}
+html.he #s2.hero .mtc{direction:ltr}
+
+/* arrows and chevrons that point "forward" (right) in English point left in Hebrew; the engine tags those paths with .nm-flip */
+html.he path.nm-flip{transform:scaleX(-1); transform-box:view-box; transform-origin:50% 50%}
+/* menu rows: the page mirrors the whole arrow in RTL, so the path is never flipped a second time (it would point right again) */
+html.he .drawer .arr{transform:scaleX(-1)}
+html.he .drawer .arr path{transform:none}
+
+/* Hebrew has no italics and should not be letter-spaced: the English labels use tracking and slanted display type */
+html.he body *:not(.wm):not(.jp):not(.nc):not(svg):not(svg *){letter-spacing:0!important;font-style:normal!important}
+html.he .wm,html.he .nc{font-style:normal}
+
+/* product "stage" art (box, tin, stamp, shadow, powder) is composed with inset-inline-* + translateX(-50%): keep it LTR so it stays centred like in English */
+html.he .vz,html.he .pc .im{direction:ltr}
+html.he .vz[data-view="3"] .stp{transform:translate(-50%,-50%) rotate(-4deg)}
+
+/* marquees: the track animates to translateX(-50%), it has to start at the left edge */
+html.he .mq{direction:ltr}
+/* about hero: the first word of each line sits on the right in Hebrew, so the words fly apart the other way */
+html.he #s1 .w.l{transform:translateX(calc(var(--e) * 78vw))}
+html.he #s1 .w.r{transform:translateX(calc(var(--e) * -78vw))}
+/* wholesale hero: the tins sit on the left in Hebrew, keep the headline off them */
+@media (min-width:901px){html.he .t2 .hero>div:first-child{max-width:calc(100% - clamp(118px,15.5vw,236px) * 2.35 - clamp(18px,6vw,110px) - 28px)}}
+/* home hero: the Hebrew block is right-aligned to the wordmark, so a narrower wordmark keeps the lede clear of the first tin */
+@media (min-width:761px){html.he #s2.hero .hbx .wm{letter-spacing:.17em}}
+@media (min-width:761px){
+  html.he #s2.hero .t{margin:0 0 -1.5px -1.5px}   /* tiles share one outline: the overlap is on the left now */
+  html.he #s2.hero .hbx{left:auto;right:calc(var(--u) * .35)}
+  html.he #s2.hero .hbx .ld{max-width:calc(var(--u) * 1.5)}   /* three lines, so the lede stays clear of the first tin */
+  html.he #s2.hero .cvs{left:auto;right:0}
+  html.he #s2.hero .mtw{left:auto;right:calc(var(--u) * .9088)}
+  /* Japanese stays left to right: the grid runs from the right, so swap the pairs (抹 left of 茶, 特 left of 選) */
+  html.he #s2.hero .tiles>.t:nth-child(2){--c:3 !important}
+  html.he #s2.hero .tiles>.t:nth-child(3){--c:1 !important}
+  html.he #s2.hero .tiles>.t:nth-child(7){--c:2 !important}
+  html.he #s2.hero .tiles>.t:nth-child(8){--c:1 !important}
+}
+
+/* home collection cards: the red stamp sat on the left of the powder in English, so it sits on the right of it in Hebrew (same angle, mirrored) */
+html.he .pstamp{transform:translateX(50%) rotate(44deg) scale(1.6)}
+@media (hover:hover){html.he .zone:hover .pstamp{transform:translateX(50%) rotate(27deg) scale(1)}}
+html.he .zone:focus-visible .pstamp,html.he .pn.flip .zone .pstamp{transform:translateX(50%) rotate(27deg) scale(1)}
+/* "what makes us different" section: the rule draws in from the right, the chevron tiles point left */
+html.he .sp-pts::before{transform-origin:100% 50%}
+html.he .chevp{background-position:100% 50%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='28' viewBox='0 0 26 28'%3E%3Cpath d='M19 4L8 14l11 10' fill='none' stroke='%231a2c27' stroke-width='3.5' stroke-linecap='square'/%3E%3C/svg%3E")}
+html.he .chevp.pp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='28' viewBox='0 0 26 28'%3E%3Cpath d='M19 4L8 14l11 10' fill='none' stroke='%23fffefb' stroke-width='3.5' stroke-linecap='square'/%3E%3C/svg%3E")}
+/* "how to make" section: keep "70 מ״ל" together, more air after "מה צריך" */
+html.he .hw-rn small{unicode-bidi:isolate;direction:rtl}
+html.he .hw-need b{margin-inline-end:1em}
+
+/* shop cards: the product name sits inside the LTR image scene, put it on the right edge and read it RTL */
+html.he .g6 .pc .im .nm{inset-inline:auto;left:auto;right:14px;direction:rtl;text-align:right}
+/* Instagram button: the diagonal arrow points up-left */
+html.he .mdl .btn svg{transform:scaleX(-1)}
+/* wholesale hero: the headline is three lines in Hebrew, leave room under the button for the ticket that overlaps the hero by 58px */
+@media (min-width:901px){html.he .t2 .hero{padding-bottom:84px}}
+@media (max-width:900px){html.he .t2 .hero>div:first-child{padding-bottom:24px}}
+html.he .sx-xb::after{content:"ביטול"}

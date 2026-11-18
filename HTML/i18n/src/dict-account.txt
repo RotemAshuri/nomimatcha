@@ -1,0 +1,46 @@
+# ---- sign in / account
+NM 08 · 会員 Account || NM 08 · 会員 חשבון
+Your account || הכניסה¦לחשבון
+Sign in to see your orders, or create an account to check out faster. || היכנסו כדי לראות את ההזמנות שלכם, או צרו חשבון כדי לשלם מהר יותר.
+Sign in || כניסה
+Create account || יצירת חשבון
+Password || סיסמה
+Show || הצגה
+Enter your password || הזינו סיסמה
+Keep me signed in || השאירו אותי מחובר
+Forgot password? || שכחתם סיסמה?
+Reset password || איפוס¦סיסמה
+Type your email and we will send a link to choose a new one. || הקלידו את האימייל ונשלח קישור לבחירת סיסמה חדשה.
+Send reset link || שליחת קישור לאיפוס
+Back to sign in || חזרה לכניסה
+Check your inbox || בדקו את¦תיבת הדואר
+If there is an account for || אם קיים חשבון עבור
+, a reset link is on its way. It works for one hour. || , קישור לאיפוס בדרך. הוא תקף לשעה אחת.
+Sent to || נשלח אל
+Valid for || תקף למשך
+1 hour || שעה אחת
+Use another email || שימוש באימייל אחר
+Welcome back, || ברוכים השבים,
+You are signed in. Taking you back to where you were. || אתם מחוברים. מחזירים אתכם למקום שבו הייתם.
+Continue || המשך
+First name || שם פרטי
+Enter your first name || הזינו שם פרטי
+Last name || שם משפחה
+Enter your last name || הזינו שם משפחה
+Use at least 8 characters || לפחות 8 תווים
+Send me harvest news, about one email a month || שלחו לי חדשות קטיף, בערך אימייל אחד בחודש
+I have read the || קראתי את
+terms of use || תנאי השימוש
+and the || ואת
+privacy policy || מדיניות הפרטיות
+Tick this box to continue || סמנו את התיבה כדי להמשיך
+Welcome to || ברוכים הבאים
+Your account is ready. We sent a link to || החשבון שלכם מוכן. שלחנו קישור אל
+. Confirm it to turn on order tracking. || . אשרו אותו כדי להפעיל מעקב הזמנות.
+Member no. || מספר חבר
+Start shopping || להתחיל לקנות
+Back to home || חזרה לדף הבית
+Not ready? || עוד לא מוכנים?
+Keep shopping || להמשיך בקנייה
+and check out as a guest. || ואפשר לשלם כאורחים.
+(optional) || (לא חובה)

@@ -1,0 +1,115 @@
+# ---- shared: header, menu, footer, search, newsletter, cart
+Skip to content || דלגו לתוכן
+Specialty matcha, direct from Japan to Israel || מאצ׳ה מובחרת, ישירות מיפן לישראל
+Open menu || פתיחת תפריט
+Nomimatcha, specialty matcha, home || נומימאצ׳ה, מאצ׳ה מובחרת, דף הבית
+Nomimatcha, specialty matcha || נומימאצ׳ה, מאצ׳ה מובחרת
+Main || ראשי
+Shop Matcha || חנות מאצ׳ה
+Shop matcha || חנות מאצ׳ה
+The NOMI Way || דרך נומי
+The NOMI way || דרך נומי
+The Nomi way || דרך נומי
+For Businesses || לעסקים
+For businesses || לעסקים
+Search || חיפוש
+Clear || ניקוי
+Close || סגירה
+Close ✕ || סגירה ✕
+My account || החשבון שלי
+Account || חשבון
+Cart || עגלה
+Help || עזרה
+Shipping & returns || משלוחים והחזרות
+/^Cart, (\d+) items?$/ || =>function(m,n){return 'עגלה, '+(n==1?'פריט אחד':n+' פריטים')}
+Footer || תחתית העמוד
+End of the line || סוף הקו
+See you at || נתראה
+the next stop. || בתחנה הבאה.
+Join the line || הצטרפו לקו
+Email || אימייל
+Pages || עמודים
+Wholesale || סיטונאות
+Contact & FAQ || יצירת קשר ושאלות נפוצות
+Page not found || העמוד לא נמצא
+Legal || משפטי
+Terms of use || תנאי¦שימוש
+Privacy policy || מדיניות¦פרטיות
+Accessibility statement || הצהרת¦נגישות
+Follow || עקבו אחרינו
+Newsletter || ניוזלטר
+© 2026 Nomimatcha || © 2026 נומימאצ׳ה
+Back to top || חזרה למעלה
+Breadcrumb || פירורי לחם
+# ---- newsletter popup
+NM 05 · || NM 05 ·
+Join || הצטרפו
+the line || לקו
+New harvests, new tins and the odd brewing note. About one email a month, and nothing else. || קטיפים חדשים, קופסאות חדשות והערת הכנה מדי פעם. בערך אימייל אחד בחודש, ותו לא.
+Enter an email like name@example.com || הזינו כתובת אימייל כמו name@example.com
+Leave with one click, any time. || אפשר לעזוב בלחיצה אחת, בכל זמן.
+You're on || אתם
+the line. || בקו.
+your email || האימייל שלכם
+Sends || שולחים
+Harvest news, monthly || חדשות קטיף, פעם בחודש
+Leave || עוזבים
+One click, any time || לחיצה אחת, בכל זמן
+Keep browsing || להמשיך לגלוש
+Search results || תוצאות חיפוש
+# ---- generic patterns
+/^Shop (Chiyogi no Mukashi|Zuihō|Shōhō no Shiro|Ryuun|Tasting trio|Starter ritual set|Chasen|Chawan|Chashaku|Furui|Kusenaoshi|Starter kit)$/ || קנו את $1
+/^Buy (Chiyogi no Mukashi|Zuihō|Shōhō no Shiro|Ryuun|Tasting trio|Starter ritual set|Chasen|Chawan|Chashaku|Furui|Kusenaoshi|Starter kit)$/ || קנו את $1
+/^Add (Chiyogi no Mukashi|Zuihō|Shōhō no Shiro|Ryuun|Tasting trio|Starter ritual set|Chasen|Chawan|Chashaku|Furui|Kusenaoshi|Starter kit) to cart$/ || הוספת $1 לעגלה
+/^(Chiyogi no Mukashi|Zuihō|Shōhō no Shiro|Ryuun|Tasting trio|Starter ritual set|Chasen|Chawan|Chashaku|Furui|Kusenaoshi|Starter kit), open product page$/ || $1, לעמוד המוצר
+/^(Chiyogi no Mukashi|Zuihō|Shōhō no Shiro|Ryuun|Tasting trio|Starter ritual set|Chasen|Chawan|Chashaku|Furui|Kusenaoshi|Starter kit), details$/ || $1, פרטים
+/^(Chiyogi no Mukashi|Zuihō|Shōhō no Shiro|Ryuun|Tasting trio|Starter ritual set|Chasen|Chawan|Chashaku|Furui|Kusenaoshi|Starter kit), usucha matcha box$/ || $1, קופסת מאצ׳ה אוסוצ׳ה
+/^(\d) of (\d)$/ || $1 מתוך $2
+/^Step (\d+)$/ || שלב $1
+Buy || קנו
+# ---- product names / terms used everywhere
+Usucha · Round and sweet || אוסוצ׳ה · עגולה ומתוקה
+Usucha · Bright and clean || אוסוצ׳ה · בהירה ונקייה
+Koicha · Rich and sweet || קוצ׳ה · עשירה ומתוקה
+Koicha · Grassy, savoury || קוצ׳ה · עשבית ועמוקה
+Tasting trio || שלישיית טעימה
+Starter ritual set || סט טקס למתחילים
+Bamboo whisk || מקצף במבוק
+Matcha bowl || קערת מאצ׳ה
+Bamboo scoop || כפית במבוק
+Fine sieve || מסננת עדינה
+Whisk holder || מעמד למקצף
+All the tools || כל הכלים
+Usucha || אוסוצ׳ה
+Koicha || קוצ׳ה
+Set || סט
+Sets || סטים
+Tool || כלי
+Tools || כלים
+Matcha || מאצ׳ה
+Aichi || אייצ׳י
+AICHI || אייצ׳י
+Tel Aviv || תל אביב
+TEL AVIV || תל אביב
+Side by side || זו לצד זו
+The first bowl || הקערה הראשונה
+Starter kit || ערכת פתיחה
+/^Nomimatcha \| (.+)$/ || נומימאצ׳ה | $1
+/^(\d+) min$/ || $1 דק׳
+/^(\d+) ml$/ || $1 מ״ל
+/^Farm (\d+)$/ || חווה $1
+. Open it and tap confirm, and you will hear about the next harvest first. || . פתחו אותה ולחצו על אישור, ואתם תשמעו על הקטיף הבא ראשונים.
+How long does it keep? || כמה זמן זה נשמר?
+# ---- search index entries
+Cancel || ביטול
+Four matchas, tools and sets || ארבע מאצ׳ות, כלים וסטים
+Farms, harvest and how we import || חוות, קטיף ואיך אנחנו מייבאים
+For cafés and shops || לבתי קפה ולחנויות
+How to whisk matcha || איך מקציפים מאצ׳ה
+Guide · the first bowl, step by step || מדריך · הקערה הראשונה, צעד אחר צעד
+Storing your matcha || אחסון המאצ׳ה
+Help · keep it fresh || עזרה · לשמור על הטריות
+Delivery in Israel || משלוחים בישראל
+Help · shipping and returns || עזרה · משלוחים והחזרות
+Your account and orders || החשבון וההזמנות שלך
+Join to track orders and check out faster || הצטרפו כדי לעקוב אחרי הזמנות ולשלם מהר יותר

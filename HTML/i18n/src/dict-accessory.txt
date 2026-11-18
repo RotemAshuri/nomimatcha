@@ -1,0 +1,285 @@
+# ---- tools / accessory page (6 items) + shared bits used by the set page
+We sent a note to || שלחנו הודעה אל
+/^(\d+) cm$/ || $1 ס״מ
+/^Ø (\d+) cm$/ || Ø $1 ס״מ
+/^(\d+) s$/ || $1 שנ׳
+/^(\d+) h$/ || $1 שע׳
+/^(\d+) mo$/ || $1 חודשים
+/^(Foam|Sturdiness|Ease of use|Easy care|Whisk room|Keeps warm|Accuracy|Light weight|Smoothness|Keeps shape|Easy start|Complete|Gift ready|Value|Easy to start|Gift-ready|Variety) (\d) of 5$/ || =>function(m,a,b){var T={'Foam':'קצף','Sturdiness':'חוזק','Ease of use':'קלות שימוש','Easy care':'קלות טיפול','Whisk room':'מרחב הקצפה','Keeps warm':'שומרת חום','Accuracy':'דיוק','Light weight':'קלילות','Smoothness':'חלקות','Keeps shape':'שומר צורה','Easy start':'התחלה קלה','Complete':'שלמה','Gift ready':'מוכנה למתנה','Value':'תמורה','Easy to start':'קל להתחיל','Gift-ready':'מוכן למתנה','Variety':'מגוון'};return T[a]+' '+b+' מתוך 5'}
+/^(Chiyogi no Mukashi|Zuihō|Shōhō no Shiro) (Sweetness|Umami|Bitterness|Grassiness) (\d) of 5$/ || =>function(m,a,b,c){var T={'Sweetness':'מתיקות','Umami':'אומאמי','Bitterness':'מרירות','Grassiness':'טעם עשבי'};return a+' '+T[b]+' '+c+' מתוך 5'}
+At a glance || במבט אחד
+Bamboo || במבוק
+Hand-carved || גילוף ידני
+Sturdiness || חוזק
+Ease of use || קלות שימוש
+Easy care || קלות טיפול
+Whisk room || מרחב הקצפה
+Keeps warm || שומרת חום
+Accuracy || דיוק
+Light weight || קלילות
+Smoothness || חלקות
+Keeps shape || שומר צורה
+Easy start || התחלה קלה
+Complete || שלמה
+Gift ready || מוכנה למתנה
+Value || תמורה
+Option || אפשרות
+80 tines || 80 שיניים
+100 tines || 100 שיניים
+Everyday, a thick and bubbly foam || יומיומי, קצף סמיך ומבעבע
+Finer tines, a silkier foam || שיניים דקות יותר, קצף משיי יותר
+Packaging || אריזה
+Standard box || קופסה רגילה
+Recycled card, ready to ship || קרטון ממוחזר, מוכן למשלוח
+Free || חינם
+Gift box with a note || קופסת מתנה עם פתק
+Packed by hand, with your message || ארוזה ביד, עם הברכה שלכם
+Gift || מתנה
+Craft || מלאכה
+Use and care || שימוש וטיפול
+Goes with || משתלב עם
+Shipping and returns || משלוחים והחזרות
+Qualities || תכונות
+Material || חומר
+Tines || שיניים
+Weight || משקל
+Made in || מקום ייצור
+Workshop || סדנה
+Capacity || קיבולת
+Length || אורך
+Holds || קיבולת
+Handle || ידית
+Fits || מתאים ל
+Made by hand || עשוי ביד
+Cut || חיתוך
+Split || ביקוע
+Carve || גילוף
+Check || בדיקה
+Clay || חימר
+Throw || עיצוב
+Glaze || זיגוג
+Fire || שריפה
+Shape || עיצוב
+Wire || חוט
+Weave || אריגה
+Frame || מסגרת
+Pack || אריזה
+Care || טיפול
+Kit || ערכה
+Goes with it || משתלב איתו
+Add 2 or more, save 10% || מוסיפים 2 או יותר, חוסכים 10%
+Returns and breakage || החזרות ושבר
+Other tools || כלים נוספים
+Matcha, 30 g || מאצ׳ה, 30 גרם
+# step labels (the bold verb in use / care lists)
+Soak || השריה
+Lift || הרמה
+Rinse || שטיפה
+Stand || הצבה
+Dry || ייבוש
+Replace || החלפה
+Warm || חימום
+Skip || בלי סבון
+Hand-wash || שטיפה ידנית
+Scoop || הוצאה
+Tap || טפיחה
+Count || ספירה
+Never soak || לא משרים
+Wipe || ניגוב
+Store || אחסון
+Rest || הנחה
+Press || לחיצה
+Shake || ניעור
+Place || הנחה
+Let dry || ייבוש
+Wash || ניקוי
+Keep || שמירה
+Handle with care. || טיפול זהיר.
+It is ceramic. || זה קרמיקה.
+# chasen
+Whisk, chasen 茶筅 || מקצף, צ׳אסן 茶筅
+Bamboo, one piece || במבוק, חתיכה אחת
+80 or 100 || 80 או 100
+Ø 6 cm, 11 cm tall || Ø 6 ס״מ, גובה 11 ס״מ
+About 18 g || בערך 18 גרם
+Takayama, Nara, Japan || טקאיאמה, נארה, יפן
+Kobayashi workshop || סדנת Kobayashi
+Hand-carved from a single piece of bamboo. The fine tines turn powder into a light, smooth foam, which is most of what makes a good bowl. || מגולף ביד מחתיכת במבוק אחת. השיניים הדקות הופכות את האבקה לקצף קל וחלק, וזה רוב מה שהופך קערה לטובה.
+Made by hand in Takayama, the town where chasen have been carved for about five hundred years. One workshop, one piece of bamboo per whisk. We buy straight from the workshop, so the batch number leads back to the people who made it. || נעשה ביד בטקאיאמה, העיירה שבה מגלפים צ׳אסן כבר כחמש מאות שנה. סדנה אחת, חתיכת במבוק אחת לכל מקצף. אנחנו קונים ישירות מהסדנה, כך שמספר האצווה מוביל אל האנשים שיצרו אותו.
+Bamboo is cut in winter and dried for a year || הבמבוק נחתך בחורף ומתייבש שנה שלמה
+Split into thin strips, one whisk at a time || מבוקע לרצועות דקות, מקצף אחד בכל פעם
+Every tine shaved and curled by hand || כל שן מוקצעת ומעוקלת ביד
+Each whisk is tested for even foam || כל מקצף נבדק ליצירת קצף אחיד
+Air freight, Nara to Tel Aviv || מטען אווירי, מנארה לתל אביב
+warm soak before the first bowl || השריה במים חמים לפני הקערה הראשונה
+of whisking for each bowl || של הקצפה לכל קערה
+of daily use, with care || של שימוש יומיומי, עם טיפול נכון
+the tines in warm water for 10 seconds. It makes them soft, so they do not snap. || של השיניים במים חמים למשך 10 שניות. כך הן מתרככות ולא נשברות.
+2 g of matcha into the bowl and add 70 ml of water at 80°C. || 2 גרם מאצ׳ה לקערה, ואז 70 מ״ל מים ב־80°C.
+in a quick W motion, wrist loose, for 15 seconds. || בתנועת W מהירה, שורש כף היד רפוי, במשך 15 שניות.
+the whisk out slowly and drink while the foam is still fine. || איטית של המקצף החוצה, ושותים כל עוד הקצף עדין.
+A new whisk is stiff. Soak it for a minute before the first bowl and it will relax into shape. || מקצף חדש קשיח. משרים אותו דקה לפני הקערה הראשונה והוא מתרכך אל הצורה.
+the tines under warm water right after use. No soap. || של השיניים במים חמים מיד אחרי השימוש. בלי סבון.
+it on a holder, so the tines keep their curve. || על מעמד, כדי ששיני המקצף ישמרו על העיקול שלהן.
+it fully for a day, away from direct sun. || מלא למשך יום, הרחק מאור שמש ישיר.
+it when the tines start to snap or the foam gets thin. || כשהשיניים מתחילות להישבר או כשהקצף נעשה דליל.
+No. Rinse by hand with warm water, no soap. Both bamboo and glazed ceramic last much longer that way. || לא. שוטפים ביד במים חמים, בלי סבון. גם במבוק וגם קרמיקה מזוגגת מחזיקים מעמד הרבה יותר ככה.
+Can I put it in the dishwasher? || אפשר לשים אותו במדיח?
+Will it work with any matcha? || האם הוא מתאים לכל מאצ׳ה?
+Yes. Every tool is sized for usucha and koicha, so it works with any matcha. We test each one with our own tins first. || כן. כל כלי מותאם לאוסוצ׳ה ולקוצ׳ה, ולכן הוא מתאים לכל מאצ׳ה. אנחנו בודקים כל אחד מהם קודם עם הקופסאות שלנו.
+Unused tools can be returned within 14 days. If something arrives damaged, send us a photo and we will send a new one. || אפשר להחזיר כלים שלא נעשה בהם שימוש תוך 14 ימים. אם משהו מגיע פגום, שלחו לנו תמונה ונשלח חדש.
+# chawan
+A wide, deep bowl with room to whisk and a smooth glaze inside, so no powder hides in the corners. Sized for one serving. || קערה רחבה ועמוקה עם מקום להקצפה וזיגוג חלק בפנים, כך שאף אבקה לא מסתתרת בפינות. בגודל מנה אחת.
+Ceramic || קרמיקה
+Glazed inside || מזוגגת בפנים
+Ink glaze || זיגוג דיו
+Deep black, glossy inside || שחור עמוק, מבריק בפנים
+Indigo glaze || זיגוג אינדיגו
+Blue-green, glossy inside || כחול־ירוק, מבריק בפנים
+Bowl, chawan 茶碗 || קערה, צ׳אוואן 茶碗
+Stoneware, glazed || חרס אבן, מזוגג
+Ø 12 cm, 8 cm tall || Ø 12 ס״מ, גובה 8 ס״מ
+250 ml to the brim || 250 מ״ל עד השפה
+About 320 g || בערך 320 גרם
+Mino, Gifu, Japan || מינו, גיפו, יפן
+Hayashi kiln || כבשן Hayashi
+Thrown and glazed in Mino, one of the oldest pottery towns in Japan. The bowl is wide on purpose: the whisk needs space, and the foam needs room to rise. Each one is fired by the Hayashi kiln and the glaze varies a little from bowl to bowl. || נוצרה על האובניים ומזוגגת במינו, אחת מעיירות הקדרות העתיקות ביפן. הקערה רחבה בכוונה: המקצף צריך מקום, והקצף צריך מקום לעלות. כל אחת נשרפת בכבשן Hayashi, והזיגוג משתנה מעט מקערה לקערה.
+Local stoneware clay, aged for months || חימר אבן מקומי, מיושן חודשים
+Thrown on the wheel, trimmed by hand || עוצבה על האובניים וגמורה ביד
+Dipped in glaze, inside and out || טבולה בזיגוג, מבפנים ומבחוץ
+Fired at 1,250°C for 14 hours || נשרפת ב־1,250°C במשך 14 שעות
+Packed in paper, Gifu to Tel Aviv || ארוזה בנייר, מגיפו לתל אביב
+wide, room for the whisk || רוחב, מקום למקצף
+to the brim, 70 ml for a bowl || עד השפה, 70 מ״ל לקערה
+to warm it with hot water || לחימום במים חמים
+the bowl with hot water, then pour it out and dry it. || של הקערה במים חמים, ואז שופכים ומייבשים.
+2 g of matcha into the warm bowl. || 2 גרם מאצ׳ה לקערה החמה.
+70 ml of water at 80°C into the powder. || 70 מ״ל מים ב־80°C אל תוך האבקה.
+straight from the bowl, held with both hands. || ישר מהקערה, כשהיא מוחזקת בשתי ידיים.
+Matcha stains a bowl very slowly. A light tea colour inside after a few months is normal. || מאצ׳ה מכתימה קערה לאט מאוד. גוון תה בהיר בפנים אחרי כמה חודשים הוא תקין.
+with warm water after use, then wipe with a soft sponge. || במים חמים אחרי השימוש, ואז מנגבים בספוג רך.
+the soap, so the glaze never takes on a smell. || כדי שהזיגוג לא יספוג ריח.
+it upside down on a clean cloth. || הפוך על מטלית נקייה.
+only. Not for the dishwasher or the microwave. || בלבד. לא למדיח ולא למיקרוגל.
+# chashaku
+A hand-shaved bamboo scoop that holds about 1 g. Two scoops make a bowl, so you never need a scale. || כפית במבוק מוקצעת ביד שמחזיקה כגרם אחד. שתי כפיות הן קערה, כך שלא צריך משקל.
+1 g a scoop || 1 גרם לכפית
+Natural bamboo || במבוק טבעי
+Light, pale bamboo || במבוק בהיר ודהוי
+Smoked bamboo || במבוק מעושן
+Dark, aged over smoke || כהה, מיושן מעל עשן
+Scoop, chashaku 茶杓 || כפית, צ׳אשאקו 茶杓
+About 1 g, level || בערך גרם אחד, מפולס
+About 6 g || בערך 6 גרם
+Shaved from the same Takayama bamboo as the whisk, by the same workshop. The curve at the tip is cut to lift powder cleanly from the tin, so the scoop is the same every time. || מוקצעת מאותו במבוק של טקאיאמה כמו המקצף, באותה סדנה. העיקול בקצה חתוך כך שיעלה אבקה נקי מהקופסה, ולכן הכפית זהה בכל פעם.
+Bamboo cut in winter, dried for a year || במבוק שנחתך בחורף ומתייבש שנה
+Split and planed to a flat strip || מבוקע ומוקצע לרצועה שטוחה
+The tip is bent over steam, then shaved || הקצה מכופף באדים ואז מוקצע
+Each scoop is weighed against a level 1 g || כל כפית נשקלת מול גרם אחד מפולס
+in a level scoop || בכפית מפולסת
+scoops for a bowl of usucha || כפיות לקערת אוסוצ׳ה
+scoops for a bowl of koicha || כפיות לקערת קוצ׳ה
+from the tin, once, and level it. A level scoop is about 1 g. || מהקופסה, פעם אחת, ומפלסים. כפית מפולסת היא בערך גרם אחד.
+the powder into the sieve, not straight into the bowl. || של האבקה אל המסננת, ולא ישר לקערה.
+two scoops for usucha, four for koicha. || שתי כפיות לאוסוצ׳ה, ארבע לקוצ׳ה.
+with water, and you are done. || עם מים, וסיימתם.
+Do not press the powder into the scoop. A heaped scoop is nearer 2 g than 1. || לא לדחוס את האבקה לתוך הכפית. כפית גדושה קרובה ל־2 גרם יותר מאשר ל־1.
+it with a dry cloth after use. || במטלית יבשה אחרי השימוש.
+it. Bamboo swells and the tip can crack. || הבמבוק מתנפח והקצה עלול להיסדק.
+it flat or hanging, somewhere dry. || שטוחה או תלויה, במקום יבש.
+it if the tip chips, so the scoop stays even. || אם הקצה נסדק, כדי שהכפית תישאר אחידה.
+# furui
+Fine steel mesh to sift the lumps out of the powder. It is the quickest way to a smooth bowl, with no clumps. || רשת פלדה עדינה שמסננת את הגושים מהאבקה. זו הדרך המהירה ביותר לקערה חלקה, בלי גושים.
+Steel mesh || רשת פלדה
+Fine || עדינה
+Wooden grip || ידית עץ
+Fits over a standard bowl || מתאימה לקערה רגילה
+Sifts a full 30 g tin || מנפה קופסה מלאה של 30 גרם
+Sieve, furui 篩 || מסננת, פורוי 篩
+Stainless steel, 100-mesh || נירוסטה, רשת 100
+Ø 9 or 12 cm || Ø 9 או 12 ס״מ
+Long, steel || ארוכה, מפלדה
+About 45 g || בערך 45 גרם
+Tsubame, Niigata, Japan || צובאמה, ניגאטה, יפן
+Sato metalworks || מפעל המתכת Sato
+Made in Tsubame, a town known for metalwork for over three hundred years. The mesh is fine enough to catch the clumps that form as matcha sits in a tin, and the long handle rests on the rim of the bowl. || נוצרה בצובאמה, עיירה שידועה בעבודות מתכת כבר יותר משלוש מאות שנה. הרשת עדינה מספיק כדי לתפוס את הגושים שנוצרים כשמאצ׳ה עומדת בקופסה, והידית הארוכה נשענת על שפת הקערה.
+Stainless wire drawn to a hair’s width || חוט נירוסטה שנמשך לעובי שערה
+Woven to 100 mesh and checked for gaps || ארוג לרשת 100 ונבדק לאיתור חורים
+Rim rolled and handle welded || השפה מגולגלת והידית מולחמת
+Tested with matcha, not just by eye || נבדקת עם מאצ׳ה, לא רק בעין
+Air freight, Niigata to Tel Aviv || מטען אווירי, מניגאטה לתל אביב
+mesh, fine enough for matcha || רשת, עדינה מספיק למאצ׳ה
+sits over a standard bowl || יושבת על קערה רגילה
+to sift a serving || לניפוי מנה
+the sieve on the rim of the bowl. || של המסננת על שפת הקערה.
+two scoops of matcha to the mesh. || שתי כפיות מאצ׳ה אל הרשת.
+the powder through with the back of the scoop. || של האבקה דרך הרשת עם גב הכפית.
+with water. No lumps. || עם מים. בלי גושים.
+Sift straight into the bowl, not on a plate. Fewer dishes, less powder lost. || מנפים ישר לקערה, לא על צלחת. פחות כלים, פחות אבקה אבודה.
+right away. Dry matcha clogs the mesh. || מיד. מאצ׳ה יבשה סותמת את הרשת.
+it dry, do not brush the mesh hard. || לייבוש, בלי לשפשף את הרשת חזק.
+fully before it goes back in the drawer. || מלא לפני שהיא חוזרת למגירה.
+it flat, so the mesh keeps its shape. || שטוחה, כדי שהרשת תשמור על צורתה.
+# kusenaoshi
+A ceramic holder that dries the whisk upside down and keeps the tines curved. A whisk that holds its shape lasts for months. || מעמד קרמי שמייבש את המקצף הפוך ושומר על עיקול השיניים. מקצף ששומר על צורתו מחזיק חודשים.
+Dries the whisk || מייבש את המקצף
+Deep black, glossy || שחור עמוק, מבריק
+Green glaze || זיגוג ירוק
+Soft green, glossy || ירוק רך, מבריק
+Whisk holder, kusenaoshi 茶筅直し || מעמד למקצף, קוסנאושי 茶筅直し
+Ø 8 cm, 9 cm tall || Ø 8 ס״מ, גובה 9 ס״מ
+80 and 100 tine whisks || מקצפים של 80 ו־100 שיניים
+About 140 g || בערך 140 גרם
+From the same Mino kiln as our bowl. The shoulders are shaped so a whisk sits down onto them head first, and the air can move through the tines while it dries. || מאותו כבשן במינו שמייצר את הקערה שלנו. הכתפיים מעוצבות כך שהמקצף נשען עליהן עם הראש כלפי מטה, והאוויר עובר בין השיניים בזמן הייבוש.
+Same stoneware as the bowl || אותו חרס אבן כמו הקערה
+Thrown and shaped around a whisk head || עוצב על האובניים סביב ראש של מקצף
+Glazed all over, lightly || מזוגג בכל החלקים, בעדינות
+Fired at 1,250°C || נשרף ב־1,250°C
+to dry in shape || לייבוש בצורה
+fits 80 and 100 tine whisks || מתאים למקצפים של 80 ו־100 שיניים
+holder per whisk || מעמד לכל מקצף
+your bowl, then rinse the whisk in warm water. || של הקערה שלכם, ואז שוטפים את המקצף במים חמים.
+off the extra water, once, gently. || של עודפי המים, פעם אחת, בעדינות.
+the whisk head-down onto the holder. || של המקצף על המעמד, עם הראש כלפי מטה.
+for a day, in shape. || למשך יום, בצורה נכונה.
+the holder with warm water now and then. || של המעמד במים חמים מדי פעם.
+it upright, so water does not sit inside. || זקוף, כדי שמים לא יישארו בפנים.
+it out of direct sun, where bamboo dries too fast. || הרחק מאור שמש ישיר, שם הבמבוק מתייבש מהר מדי.
+# kit
+Whisk, bowl, scoop and sieve, in one box. Everything you need for the first bowl, chosen to work together. || מקצף, קערה, כפית ומסננת בקופסה אחת. כל מה שצריך לקערה הראשונה, נבחר כדי לעבוד יחד.
+Bowl || קערה
+Scoop and sieve || כפית ומסננת
+Tools only || כלים בלבד
+Whisk, bowl, scoop and sieve || מקצף, קערה, כפית ומסננת
+With matcha || עם מאצ׳ה
+Plus 30 g of Chiyogi no Mukashi || בתוספת 30 גרם Chiyogi no Mukashi
+Includes || כולל
+Chasen, chawan, chashaku, furui || צ׳אסן, צ׳אוואן, צ׳אשאקו, פורוי
+80 tines, bamboo || 80 שיניים, במבוק
+Ø 12 cm, ink glaze || Ø 12 ס״מ, זיגוג דיו
+18 cm, natural bamboo || 18 ס״מ, במבוק טבעי
+Sieve || מסננת
+Ø 9 cm, steel mesh || Ø 9 ס״מ, רשת פלדה
+Box || קופסה
+Recycled card, gift ready || קרטון ממוחזר, מוכן למתנה
+You save || חוסכים
+₪36 against buying them one by one || ₪36 לעומת קנייה בנפרד
+Four tools from the three workshops we buy from directly, packed together in one box. It is the same whisk, bowl, scoop and sieve we sell one by one, at ₪36 less. A good first gift for someone who has not tried matcha yet. || ארבעה כלים משלוש הסדנאות שאנחנו קונים מהן ישירות, ארוזים יחד בקופסה אחת. אלה אותם מקצף, קערה, כפית ומסננת שאנחנו מוכרים בנפרד, ב־₪36 פחות. מתנה ראשונה טובה למי שעוד לא טעם מאצ׳ה.
+Takayama, Nara || טקאיאמה, נארה
+Mino, Gifu || מינו, גיפו
+Tsubame, Niigata || צובאמה, ניגאטה
+Packed together in Tel Aviv || נארז יחד בתל אביב
+Three workshops || שלוש סדנאות
+tools in the box || כלים בקופסה
+less than one by one || פחות מקנייה בנפרד
+first bowl, ready to go || קערה ראשונה, מוכנה לדרך
+2 g of matcha into the bowl with the sieve and scoop. || 2 גרם מאצ׳ה לקערה עם המסננת והכפית.
+70 ml of water at 80°C. || 70 מ״ל מים ב־80°C.
+in a W motion for 15 seconds. || בתנועת W במשך 15 שניות.
+it from the bowl while the foam is fine. || מהקערה כל עוד הקצף עדין.
+If you buy the kit with matcha, the matcha is the 30 g Chiyogi no Mukashi, a gentle first tea. || אם קונים את הערכה עם מאצ׳ה, המאצ׳ה היא Chiyogi no Mukashi במשקל 30 גרם, תה ראשון עדין.
+each tool with warm water after use. No soap. || של כל כלי במים חמים אחרי השימוש. בלי סבון.
+the whisk upright, the rest on a clean cloth. || של המקצף זקוף, ושל השאר על מטלית נקייה.
+only. Nothing here goes in the dishwasher. || בלבד. שום דבר כאן לא הולך למדיח.
+the box. It stores everything neatly. || על הקופסה. היא מאחסנת הכול בצורה מסודרת.
+Stand it where air can move. A damp corner makes the whisk go grey. || מעמידים אותו במקום שבו האוויר יכול לנוע. פינה לחה גורמת למקצף להאפיר.

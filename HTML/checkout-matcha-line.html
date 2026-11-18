@@ -245,10 +245,6 @@ h1,h2,h3,h4{font-weight:500;letter-spacing:-.02em;line-height:1}
 .trust li{display:flex;align-items:center;gap:14px;padding:12px 16px;font-size:14.5px;font-weight:600;line-height:1.25}
 .trust li+li{border-top:1px dashed var(--ink)}
 .trust .jp{margin-inline-start:auto;font-size:12px;color:var(--ink2);font-weight:700}
-.demo{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:22px;padding:8px 12px;border:1.5px dashed var(--ink);background:var(--paper);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-.demo>span{color:var(--ink2);margin-inline-end:auto}
-.demo button{height:26px;padding-inline:10px;border:1.5px solid var(--ink);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-.demo button:hover,.demo button.on{background:var(--ink);color:var(--paper)}
 
 /* ---------- confirmation ---------- */
 .fin{display:none}
@@ -286,8 +282,6 @@ body.is-done .fin{display:block}
 .btn.out:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 
 /* ---------- foot ---------- */
-.endnote{background:var(--paper);color:var(--ink);border-top:var(--ln) solid var(--ink);padding:22px var(--g);display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
-.endnote span:last-child{color:var(--ink2)}
 
 /* ---------- tablet and phone: the order collapses to a bar on top ---------- */
 @media(max-width:980px){
@@ -510,7 +504,6 @@ body.is-done .fin{display:block}
         <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V9M12 13c-4 0-6-2-6-6 4 0 6 2 6 6zM12 15c4 0 6-2 6-6-4 0-6 2-6 6z"/></svg><span data-t="tr3">Direct from the tea farm, no middlemen</span><span class="jp">産地直送</span></li>
       </ul>
 
-      <div class="demo" id="demo"><span data-t="demo">Demo order</span><button type="button" data-demo="few">Few</button><button type="button" data-demo="full">Full</button></div>
     </div>
   </div></aside>
 </div>
@@ -539,7 +532,6 @@ body.is-done .fin{display:block}
 </section>
 </main>
 
-<div class="endnote"><span data-t="end1">Prototype checkout: nothing is charged. Prices, pickup points and fees are samples</span><span data-t="end2">Check against the terms of use before launch</span></div>
 
 <script>
 (function(){
@@ -566,14 +558,14 @@ fShip:['Shipping & returns','משלוחים והחזרות'],fAcct:['Create an a
 osShow:['Show order summary','הצגת סיכום הזמנה'],osHide:['Hide order summary','הסתרת סיכום הזמנה'],os:['Your order','ההזמנה שלכם'],edit:['Edit cart','עריכת עגלה'],
 code:['Discount code or gift card','קוד קופון או שובר מתנה'],apply:['Apply','החלה'],
 tr1:['Tracked delivery in 2–4 business days','משלוח עם מעקב תוך 2–4 ימי עסקים'],tr2:['14 days to send an unopened tin back','14 ימים להחזרת קופסה סגורה'],tr3:['Direct from the tea farm, no middlemen','ישירות מחוות התה, בלי מתווכים'],
-demo:['Demo order','הזמנת דמו'],total:['Total','סה״כ'],
+total:['Total','סה״כ'],
 fChip:['NM 08 · Order','NM 08 · הזמנה'],fNo:['Order number','מספר הזמנה'],fTot:['Total','סה״כ'],fMail:['Confirmation sent to','אישור נשלח אל'],fNext:['What happens next','מה קורה עכשיו'],
 s1t:['Order','הזמנה'],s1:['We have it','קיבלנו'],s1d:['Before 14:00 and it leaves us the next business day.','הזמנה עד 14:00 יוצאת מאיתנו ביום העסקים הבא.'],
 s2t:['Packed','אריזה'],s2:['We pack it','אורזים'],s2d:['Sealed tin, packed by hand, tracking link sent by email.','קופסה סגורה, אריזה ידנית, וקישור מעקב נשלח במייל.'],
 s3t:['Courier','שליח'],s3:['It travels','בדרך'],s3d:['The courier calls or texts before arriving.','השליח יתקשר או ישלח הודעה לפני ההגעה.'],
 s4t:['Door','יעד'],s4:['It arrives','מגיע'],
 fWhat:['What','מה'],fDet:['Details','פרטים'],fKeep:['Keep shopping','להמשך קנייה'],
-end1:['Prototype checkout: nothing is charged. Prices, pickup points and fees are samples','צ׳ק-אאוט לדוגמה: לא מתבצע חיוב. מחירים, נקודות איסוף ועמלות הם לדוגמה'],end2:['Check against the terms of use before launch','יש לבדוק מול תנאי השימוש לפני העלייה לאוויר']
+
 };
 /* strings with markup or values */
 var H={
@@ -603,10 +595,10 @@ pp:['PayPal','PayPal'],bit:['Bit','Bit'],xp:['Express payment','תשלום מה�
 };
 var PT=[['Tel Aviv · Dizengoff Center locker','תל אביב · לוקר דיזנגוף סנטר'],['Jerusalem · Hanevi’im 12, kiosk','ירושלים · קיוסק, הנביאים 12'],['Haifa · Hadar, Herzl 30','חיפה · הדר, הרצל 30'],['Be’er Sheva · Grand Canyon locker','באר שבע · לוקר הקניון הגדול']];
 var CAT={
- 'Chiyogi no Mukashi':{kj:'千代木',tr:'Thousand-year tree',trh:'עץ בן אלף שנה',ty:'Usucha',tyh:'אוסוצ׳ה',box:1,c:'indigo',p:118,sz:'30 g'},
- 'Zuihō':{kj:'瑞鳳',tr:'Auspicious phoenix',trh:'עוף החול המבשר טוב',ty:'Usucha',tyh:'אוסוצ׳ה',box:2,c:'red',p:128,sz:'30 g'},
- 'Shōhō no Shiro':{kj:'小峰',tr:'The small peak',trh:'הפסגה הקטנה',ty:'Koicha',tyh:'קוצ׳ה',box:3,c:'ink',p:168,sz:'30 g'},
- 'Ryuun':{kj:'龍雲',tr:'Dragon cloud',trh:'ענן הדרקון',ty:'Koicha',tyh:'קוצ׳ה',box:4,c:'matcha',p:188,sz:'30 g'},
+ 'Chiyogi no Mukashi':{kj:'千代木',tr:'Usucha · Round and sweet',trh:'אוסוצ׳ה · עגולה ומתוקה',ty:'Usucha',tyh:'אוסוצ׳ה',box:1,c:'indigo',p:118,sz:'30 g'},
+ 'Zuihō':{kj:'瑞鳳',tr:'Usucha · Bright and clean',trh:'אוסוצ׳ה · בהירה ונקייה',ty:'Usucha',tyh:'אוסוצ׳ה',box:2,c:'red',p:128,sz:'30 g'},
+ 'Shōhō no Shiro':{kj:'小峰',tr:'Koicha · Rich and sweet',trh:'קוצ׳ה · עשירה ומתוקה',ty:'Koicha',tyh:'קוצ׳ה',box:3,c:'ink',p:168,sz:'30 g'},
+ 'Ryuun':{kj:'龍雲',tr:'Koicha · Grassy, savoury',trh:'קוצ׳ה · עשבית ועמוקה',ty:'Koicha',tyh:'קוצ׳ה',box:4,c:'matcha',p:188,sz:'30 g'},
  'Tasting trio':{kj:'飲み比べ',tr:'Side by side',trh:'טעימה זו לצד זו',ty:'Set',tyh:'סט',box:2,c:'matcha',p:249,sz:'3 × 20 g'},
  'Starter ritual set':{kj:'入門',tr:'The first bowl',trh:'הקערה הראשונה',ty:'Set',tyh:'סט',box:1,c:'indigo',p:329,sz:''},
  'Chasen':{kj:'茶筅',tr:'Bamboo whisk',trh:'מקצף במבוק',ty:'Tool',tyh:'כלי',c:'matcha',p:79,sz:''},
@@ -688,7 +680,6 @@ function render(){
   var fm=$('#freeM');fm.className='free-m'+(c.remain?'':' ok');
   fm.innerHTML='<p><span>'+(c.remain?T(W.toFree,nmH(m(c.remain))):T(W.unl))+'</span><span class="jp">'+W.freej+'</span></p><span class="fm" style="--p:'+Math.min(1,c.sub/FREE)+'"><i></i></span>';
   renderMethods();fillInst();
-  $$('[data-demo]').forEach(function(b){b.classList.toggle('on',false)});
 }
 
 /* ----- discount code ----- */
@@ -703,9 +694,6 @@ $('#codeM').addEventListener('click',function(e){if(e.target.id==='codeRm'){code
 /* ----- order summary toggle (phones) ----- */
 function setOsLabel(){var o=$('#osT').getAttribute('aria-expanded')==='true';$('#osTl').textContent=T(o?D.osHide:D.osShow)}
 $('#osT').addEventListener('click',function(){var o=this.getAttribute('aria-expanded')!=='true';this.setAttribute('aria-expanded',String(o));$('#osB').classList.toggle('open',o);setOsLabel()});
-
-/* ----- demo orders ----- */
-$('#demo').addEventListener('click',function(e){var b=e.target.closest('[data-demo]');if(!b)return;lines=SAMPLE[b.getAttribute('data-demo')].map(function(l){return {n:l.n,sz:l.sz,p:l.p,q:l.q}});render();b.classList.add('on')});
 
 /* ----- delivery mode, payment method, billing ----- */
 $$('input[name=mode]').forEach(function(r){r.addEventListener('change',function(){
@@ -801,10 +789,11 @@ if(signedIn()){
 }
 
 /* ----- start ----- */
-$$('[data-lang]').forEach(function(b){b.addEventListener('click',function(){he=b.getAttribute('data-lang')==='he';applyLang()})});
+$$('[data-lang]').forEach(function(b){b.addEventListener('click',function(){he=b.getAttribute('data-lang')==='he';try{localStorage.setItem('nm-lang-v1',he?'he':'en')}catch(e){}applyLang()})});
 $$('.legal a,.ttl,.line a').forEach(function(){});
 (function(){
   var q=new URLSearchParams(location.search);
+  try{if(localStorage.getItem('nm-lang-v1')==='he')he=true}catch(e){}
   if(q.get('dir')==='rtl'||q.get('lang')==='he')he=true;
   loadLines();applyLang();
   if(q.get('done')==='1'){mode='home';$('#street').value='Dizengoff 99';$('#city').value='Tel Aviv';$('#phone').value='050 000 0000';$('#cn').value='4580 1234 5678 4242';$('#fn').value='Noa';order={no:'NM-48213',total:calc().total,express:'',mail:signedIn()?'noa@example.com':'noa@example.com'};document.body.classList.add('is-done');renderDone()}
